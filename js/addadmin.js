@@ -1,4 +1,4 @@
-var admin = 0;
+var admin = 1;
 
 // afficher le tableau au chargement de la page
 document.addEventListener("DOMContentLoaded", function () {

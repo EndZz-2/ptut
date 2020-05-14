@@ -30,7 +30,7 @@
             <p>êtes-vous sur de vouloir le suprimer ?</p>
             <div>
                 <button class="btn-close modal-btn cancel">Non</button>
-                <button class="btn-confirm modal-btn ok">Oui, le supprimer!</button>
+                <button onclick="modalConfirm()" class="btn-confirm modal-btn ok">Oui, le supprimer!</button>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
     </div>
     </form>
     <script src="js/main.js"></script>
-    <script src="js/addclient.js"></script>
+    <script src="js/addadmin.js"></script>
 </body>
 
 </html>

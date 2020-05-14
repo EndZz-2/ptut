@@ -6,8 +6,9 @@
     </tr>
     <?php
         require 'dbcon.inc.php';
-        $q = $db->prepare("SELECT * FROM $table WHERE `admin`=':admin'");
-        $q->execute(['admin' => 0]);
+        $admin = $_POST['admin'];
+        $q = $db->prepare("SELECT * FROM $table WHERE `admin`= :a ");
+        $q->execute(['a' => $admin]);
         while ($data = $q->fetch()){ 
     ?>
     <tr>

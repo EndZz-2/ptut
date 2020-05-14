@@ -1,25 +1,31 @@
-<?php
-    require 'include/function.inc.php';
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Codd(in)</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
     <link href="css/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="css/fontawesome/css/solid.css" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+        }
+
+        .btn-open {
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
     <?php
-    require 'header.php';
+        require 'header.php';
     ?>
+    <button class="btn btn-open">Show modal</button>
     <div class="confirm-modal modal">
         <div class="modal-content js-modal">
             <div class="modal-icon">
@@ -35,23 +41,7 @@
         </div>
     </div>
     <div id="modal-bg"></div>
-
-    <div class="content">
-        <div id="db"></div>
-        <form action="javascript:void(0);" class="form-add">
-            <div class="group">
-                <input type="text" name="email" id="mail" autocomplete="off" required>
-                <label for="email">Email</label>
-            </div>
-            <div class="group">
-                <input type="text" name="username" id="Uname" autocomplete="off" required>
-                <label for="username">Username</label>
-            </div>
-            <input class="btn" type="submit" name="form-add" id="send" value="Envoyer">
-    </div>
-    </form>
-    <script src="js/main.js"></script>
-    <script src="js/addclient.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
