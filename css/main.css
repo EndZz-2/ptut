@@ -91,12 +91,12 @@ header {
 
 .default-nav .logo {
     float: left;
-    margin-top: -3px;   
+    margin-top: -3px;
     position: absolute;
     left: 8vw;
 }
 
-.default-nav .btn{
+.default-nav .btn {
     float: right;
     position: absolute;
     right: 8vw;
@@ -105,7 +105,7 @@ header {
 
 /* navbar admin */
 
-nav.admin {
+.admin {
     margin-top: 5px;
     position: absolute;
     left: 50%;
@@ -113,11 +113,11 @@ nav.admin {
     top: 0;
 }
 
-nav.admin .link {
+.admin .link {
     font-size: 15px;
 }
 
-nav.admin a {
+.admin a {
     text-decoration: none;
     color: #fff;
     display: inline-block;
@@ -125,14 +125,13 @@ nav.admin a {
     transition: .5;
 }
 
-nav.admin a:hover {
+.admin a:hover {
     color: #ff1d4e;
 }
 
-nav.admin a.active {
+.admin a.active {
     color: #ff1d4e;
 }
-
 
 /* table */
 
@@ -162,6 +161,11 @@ table th {
     float: left;
 }
 
+.form-contact {
+    padding: 2em 2em;
+
+}
+
 /* content */
 
 .content {
@@ -172,13 +176,47 @@ table th {
     width: 700px;
 }
 
+.content.contact {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+}
+
 /* input */
-.form-add .group {
+.group {
     position: relative;
     float: left;
 }
 
-.form-add input[type="text"] {
+.form-contact .group {
+    position: relative;
+    float: left;
+}
+
+.form-contact h1{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.form-contact .titre-dot {
+    font-family: 'Kollektif', sans-serif;
+    color: #ff1d4e;
+    font-weight: 700;
+    font-size: 90px;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 15%;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
@@ -191,9 +229,34 @@ table th {
     outline: none;
 }
 
+textarea {
+    font-size: 18px;
+    padding: 8px 10px 0px 5px;
+    display: block;
+    width: 437px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #4e4e4e;
+    color: #fff;
+    outline: none;
+    line-height: normal;
+    overflow-y: hidden;
+    resize: none;
+    max-height: 15rem;
+}
+
+.form-contact input[type="text"] {
+    margin-bottom: 1.5em;
+    transition: .2s ease;
+}
+
+.form-contact textarea {
+    margin-bottom: 2em;
+}
+
 /* label default */
 
-.form-add label {
+label {
     color: #8e8e8e;
     font-size: 18px;
     font-weight: normal;
@@ -208,18 +271,21 @@ table th {
 
 /* active stat */
 
-.form-add input[type="text"]:focus~label,
-.form-add input[type="text"]:valid~label {
+input[type="text"]:focus~label,
+input[type="text"]:valid~label,
+textarea:focus~label,
+textarea:valid~label {
     top: -10px;
     font-size: 14px;
     color: #ff1d4e;
 }
 
-.form-add input[type="text"]:focus,
-.form-add input[type="text"]:valid {
-    border-bottom: 3px solid #ff1d4e;
+input[type="text"]:focus,
+input[type="text"]:valid,
+textarea:focus,
+textarea:valid {
+    border-bottom: 1px solid #ff1d4e;
 }
-
 /* button */
 
 .btn {
@@ -368,7 +434,7 @@ table th {
     position: absolute;
 }
 
-#modal-bg.active{
+#modal-bg.active {
     display: block;
 }
 

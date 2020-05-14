@@ -17,7 +17,7 @@ function db(r) {
 }
 
 // au click du button #send inserer les valeurs
-function sendform(r){
+function sendform(r) {
     Uname = document.querySelector('#Uname').value;
     mail = document.querySelector('#mail').value;
     at = false;
@@ -115,7 +115,9 @@ var confirmModal = document.querySelector('.confirm-modal');
 var modalcont = document.querySelector('.modal-content');
 var modalbg = document.querySelector('#modal-bg');
 var btnok = document.querySelector('.btn-confirm');
-var modalChildren = modalcont.children;
+if (modalcont != null) {
+    var modalChildren = modalcont.children;
+}
 
 function modalAnimation() {
     modalcont.animate([{
@@ -147,8 +149,8 @@ function modalAnimation() {
 
     for (let i = 0; i < modalChildren.length; i++) {
         let item = modalChildren[i];
-        
-   
+
+
         item.animate([{
                 transform: 'translateY(30px)',
                 opacity: 0
@@ -172,24 +174,22 @@ function toggleClasses() {
     modalbg.classList.toggle("active");
 }
 
-function modal(){
+function modal() {
     toggleClasses();
     modalAnimation();
 }
+if (btnConfirm != null) {
+    btnClose.addEventListener('click', toggleClasses);
+}
 
-btnClose.addEventListener('click', toggleClasses);
-
-window.addEventListener('click', function (e){
+window.addEventListener('click', function (e) {
     if (e.target == confirmModal) {
         toggleClasses();
     }
 });
 
-
-
-
-
-
-
-
-
+let textarea = document.querySelector("#contact-textarea");
+textarea.addEventListener('keyup', function () {
+    textarea.style.height = "20px";
+    textarea.style.height = (15 + textarea.scrollHeight) + "px";
+})

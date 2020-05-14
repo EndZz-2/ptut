@@ -18,9 +18,9 @@
 
     <nav class="default-nav">
         <a class="logo" href="index.php"><img src="img/coddin.svg" alt="logo"></a>
-        <a class="link active" href="#">Services</a>
-        <a class="link" href="#">Nos réalisations</a>
+        <a class="link active" href="">Services</a>
+        <a class="link" href="realisation.php">Nos réalisations</a>
         <a class="link" href="#">À propos</a>
-        <a class="btn" href="#">Contact</a>
+        <a class="btn" href="contact.php">Contact</a>
     </nav>
 </header>
