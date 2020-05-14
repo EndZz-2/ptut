@@ -1,4 +1,4 @@
-<?php  include("header.html"); ?>
+<?php  include("header.php"); ?>
 <section>
 	<div>
 		<h1> .contactez-nous</h1>
