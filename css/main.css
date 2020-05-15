@@ -12,6 +12,7 @@ body {
     background-color: #121212;
     color: #fff;
     font-family: 'Merriweather Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .titre-dot {
@@ -31,6 +32,74 @@ h1 {
     color: #fff;
     font-family: 'Kollektif', sans-serif;
     text-align: center;
+}
+
+
+/* index */
+
+.scrolldown {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-user-select: none;
+}
+
+.banner {
+    height: 100vh;
+    width: 100vw;
+}
+
+.AYI {
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    transform: translateY(-50%);
+    width: 43vw;
+    max-width: 40vw;
+    z-index: -1;
+    -webkit-user-select: none;
+}
+
+.AYI-back {
+    position: absolute;
+    top: 60vh;
+    left: 60vw;
+    transform: translateY(-50%);
+    max-width: 40vw;
+    z-index: -1;
+    -webkit-user-select: none;
+}
+
+.content-index {
+    position: relative;
+    top: 100%;
+}
+
+.first-container {
+    margin-top: 300px;
+}
+
+.video {
+    float: right;
+    margin-right: 130px;
+    width: 680px;
+    height: 340px;
+    background-color: #fff;
+}
+
+.text {
+    display: block;
+    margin: auto;
+}
+
+.text p {
+    max-width: 30rem;
+}
+
+.text h1 {
+    line-height: 20px;
+    text-align: left;
 }
 
 /* navbar */
@@ -195,7 +264,7 @@ table th {
     float: left;
 }
 
-.form-contact h1{
+.form-contact h1 {
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 64px;
@@ -286,6 +355,7 @@ textarea:focus,
 textarea:valid {
     border-bottom: 1px solid #ff1d4e;
 }
+
 /* button */
 
 .btn {
