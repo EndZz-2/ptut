@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="289" height="200" viewBox="0 0 289 200">
+    <defs>
+        <style>
+            .a {
+                fill: none;
+                stroke: #fff;
+            }
+
+            .a,
+            .b {
+                font-size: 59px;
+            }
+
+            .a,
+            .b,
+            .c {
+                font-family: Kollektif-Bold, Kollektif;
+                font-weight: 700;
+            }
+
+            .b {
+                fill: #fff;
+            }
+
+            .c {
+                fill: #ff1d4e;
+                font-size: 200px;
+            }
+        </style>
+    </defs>
+    <g transform="translate(0.872 -0.187)"><text class="a" transform="translate(60.128 162.187)">
+            <tspan x="-59.797" y="0">ARE</tspan>
+        </text><text class="b" transform="translate(60.128 104.187)">
+            <tspan x="-60.239" y="0">YOU</tspan>
+        </text><text class="c" transform="translate(208.128 162.187)">
+            <tspan x="-79.4" y="0">in</tspan>
+        </text></g>
+</svg>

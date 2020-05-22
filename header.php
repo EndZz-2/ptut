@@ -1,9 +1,8 @@
-<header>
 <?php
-    if(isset($_SESSION['userUid'])){
-        if($_SESSION['admin'] == true){
+    if(isset($_SESSION['admin'])){
+        if($_SESSION['admin'] === true){
             console_log("admin");
-        ?>
+?>
     <nav class="admin">
         <a href="#">CMS</a>
         <a href="#">Projet</a>
@@ -11,16 +10,35 @@
         <a href="admin-manager.php">Gérer Admin</a>
         <?=$_SESSION['username']?>
     </nav>
-<?php
+    <?php
         }else  console_log("client");
     }
 ?>
 
+<header class="nav">
+    <a href="index.php"><img class="logo" src="img/coddin.svg" alt="logo"></a>
+
     <nav class="default-nav">
-        <a class="logo" href="index.php"><img src="img/coddin.svg" alt="logo"></a>
-        <a class="link active" href="">Services</a>
-        <a class="link" href="realisation.php">Nos réalisations</a>
-        <a class="link" href="#">À propos</a>
         <a class="btn" href="contact.php">Contact</a>
+        <ul>
+            <li><a class="link" href="">Services</a></li>
+            <li><a class="link" href="realisation.php">Nos réalisations</a></li>
+            <li><a class="link" href="">À propos</a></li>
+        </ul>
+    </nav>
+
+    <nav class="responsive-nav">
+        <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div id="menu">
+            <ul>
+                <li><a class="link" href="">Services</a></li>
+                <li><a class="link" href="realisation.php">Nos réalisations</a></li>
+                <li><a class="link" href="">À propos</a></li>
+            </ul>
+        </div>
     </nav>
 </header>

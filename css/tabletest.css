@@ -1,15 +1,15 @@
 table {
     width: 100%;
-    padding: 2px; 
-    border-spacing: 2px; 
-   }
-   .tabcenter{
-      margin-left:auto;
-      margin-right:auto;
-   }
+    padding: 2px;
+    border-spacing: 2px;
+}
 
-img { 
+.tabcenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
     width: 100px;
     height: 100px;
 }
- 

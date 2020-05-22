@@ -1,20 +1,78 @@
-.row{
-    display: grid;
-    grid-template-areas:
-    'main main2';
-    grid-template-columns: [main main2] 50% ;
-    padding: 10px;
-    grid-auto-rows: minmax(100px, auto);
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
 }
 
-
-col-1{
-    grid-area: main;
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1%;
 }
 
-col-2{
-    grid-area: main2;
+.col:first-child {
+    margin-left: 0;
 }
 
+/*  GROUPING  */
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+/*  GRID OF FOUR  */
+.col-4 {
+    width: 100%;
+}
+
+.col-3 {
+    width: 74%;
+}
+
+.col-2 {
+    width: 49%;
+}
+
+.col-1 {
+    width: 24%;
+}
+
+.grid {
+    display: block;
+    float: left;
+    width: 24%;
+    margin: 1% 0 1% 1%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 1000px) {
+    .col {
+        margin: 1% 0 1% 3%;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4 {
+        width: 97%;
+    }
+
+    .grid{
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .grid{
+        width: 100%;
+    }
+}
 
 
