@@ -178,6 +178,7 @@ function modal() {
     toggleClasses();
     modalAnimation();
 }
+
 if (btnConfirm != null) {
     btnClose.addEventListener('click', toggleClasses);
 }

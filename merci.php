@@ -20,6 +20,7 @@
 	<section class="content ">
 		<h1>Merci de nous avoir contacté</h1>
 	</section>
+	
 	<script src="js/main.js"></script>
 </body>
 

@@ -129,19 +129,6 @@ header {
     font-size: 20px;
 }
 
-.default-nav .link {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    line-height: 1;
-    padding: 9px 10px;
-    margin: auto 20px;
-    font-family: 'Kollektif', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-
 .default-nav .link::before {
     content: "";
     background: #ff1d4e;
