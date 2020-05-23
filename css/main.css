@@ -269,6 +269,7 @@ body{
     -webkit-user-select: none;
 }
 
+
 .scrolldown {
     position: absolute;
     bottom: 70px;
@@ -312,6 +313,24 @@ body{
     font-weight: 400;
 }
 
+.ligne{
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    margin-top: 80px;
+    margin-bottom: 20%;
+}
+
+.services{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+    margin-top: 400px;
+    margin-bottom: 5%;
+}
+
 
 @media only screen and (min-width: 1400px) {
     .banner .AYI{
@@ -320,9 +339,6 @@ body{
     .banner .AYI-back{
         height: 60vw;
     }
-
-   
-    
 }
 
 @media only screen and (max-width: 1000px) {
@@ -343,9 +359,135 @@ body{
         position: relative;
         transform: translateY(0%);
         width: 100%;
-    }
-    
+    }    
 }
+
+/*
+╔═══════════════════════════════╗ 
+           index card
+╚═══════════════════════════════╝ 
+*/
+
+.card {
+    position: absolute;
+    text-align: center;
+    width: 500px;   
+}
+
+.card.design {
+    left: 25%;
+    transform: translate(-50%, 40px);
+}
+
+.card.web {
+    left: 50%;
+    transform: translate(-50%, 40px);
+}
+
+.card.redaction {
+    right: 25%;
+    transform: translate(50%, 40px);
+}
+
+.card .rond{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    z-index: 1;
+    margin: auto;
+    transition: .3s cubic-bezier(.40, 0, 0, 1);
+}
+
+.card.design .rond{
+    background-color: #ff1d4e;
+}
+
+.card.web .rond{
+    background-color: #00FFCE;
+}
+
+.card.redaction .rond{
+    background-color: #FFDA00;
+}
+
+.card .title{
+    margin-top: 50px;
+    font-size: 1.8rem;
+}
+
+.card .content{
+    padding-bottom: 50px;  
+    transform: translateY(-20%);
+    opacity: 0;
+    z-index: -1;
+    transition: .5s cubic-bezier(.40, 0, 0, 1);
+    text-align: start;
+}
+
+.card:hover .content{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.card:hover .rond {
+    transform: scale(1.2);
+}
+
+.card .content::after{
+    content: "";
+    width: 45%;
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.card.design .content::after{
+    background-color: #ff1d4e;
+}
+
+.card.web .content::after{
+    background-color: #00FFCE;
+}
+
+.card.redaction .content::after{
+    background-color: #FFDA00;
+}
+
+.card .title::before{
+    content: "";
+    width: 45%;
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+}
+
+.card.design .title::before{
+    background-color: #ff1d4e;
+}
+
+.card.web .title::before{
+    background-color: #00FFCE;
+}
+
+.card.redaction .title::before{
+    background-color: #FFDA00;
+}
+
+@media only screen and (max-width: 1000px) {
+    .ligne{
+        display: none;
+    } 
+}
+
+
+
+
 
 /*
 ╔═══════════════════════════════╗ 

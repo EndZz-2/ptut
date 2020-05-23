@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="section">
+        <div class="section">
             <div class="row">
                 <div style="text-align: center;" class="col col-4">
                     <h1><span class="titre-dot">.</span>nospartenaires</h1>
@@ -73,19 +73,43 @@
                     </a>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="section">
             <div class="row" style="margin: 0% 2%;">
                 <div class="col col-4">
                     <h1><span class="titre-dot">.</span>Conception</h1>
-                    <div class="conception-text" >
+                    <div class="conception-text">
                         <h2>1 Projet | 3 Pôles</h2>
                         <img style="height: 140px;" src="img/YouArein.svg" alt="You Are In">
                         <h2>Nos trois pôles</h2>
                     </div>
                 </div>
-                <div class="col col-1">
-
+                <div class="col col-4">
+                    <div class="ligne"></div>
+                    <div class="card design">
+                        <div class="rond"></div>
+                        <h1 class="title">Design</h1>
+                        <p class="content">Vos clients méritent un site clair, facile de navigation et bien pensé. C’est
+                            ce dans quoi notre Pôle Design se spécialise, parallèlement à l’élaboration de l’aspect
+                            visuel de votre site. Tendances et modernité sont nos maîtres-mots.</p>
+                    </div>
+                    <div class="card web">
+                        <div class="rond"></div>
+                        <h1 class="title">Web</h1>
+                        <p class="content">En réponse directe au Pôle Design, notre Pôle Web s’occupe de réaliser votre
+                            site web. C’est lui qui pose les fondations, puis qui les embellit. Ce n’est pas magique,
+                            mais presque ! </p>
+                    </div>
+                    <div class="card redaction">
+                        <div class="rond"></div>
+                        <h1 class="title">Rédaction</h1>
+                        <p class="content">Parce que votre puissance de communication passe aussi par les mots, nous
+                            vous proposons à travers notre Pôle Rédaction de rédiger le contenu de toutes les pages de
+                            votre site. Un site vitrine vide ne fait pas bonne mine !</p>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <a class="btn services" href="">Nos Services</a>
                 </div>
             </div>
         </div>
