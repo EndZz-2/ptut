@@ -21,9 +21,9 @@
     <nav class="default-nav">
         <a class="btn" href="contact.php">Contact</a>
         <ul>
-            <li><a class="link" href="">Services</a></li>
+            <li><a class="link" href="services.php">Services</a></li>
             <li><a class="link" href="realisation.php">Nos réalisations</a></li>
-            <li><a class="link" href="">À propos</a></li>
+            <li><a class="link" href="apropos.php">À propos</a></li>
         </ul>
     </nav>
 

@@ -68,6 +68,11 @@ body {
              navbar 
 ╚═══════════════════════════════╝ 
 */
+header{
+    position: absolute;
+    top: 0;
+}
+
 .nav {
     -webkit-user-select: none;
 
@@ -90,6 +95,7 @@ body {
 .nav .logo {
     position: fixed;
     left: 100px;
+    top: 25px;
     transition: all .2s ease;
 }
 
@@ -150,7 +156,7 @@ body {
     }
 
     .nav .logo {
-        margin-top: 20px;
+        margin-top: 0px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -246,6 +252,7 @@ body {
             footer
 ╚═══════════════════════════════╝ 
 */
+
 footer {
     position: relative;
     bottom: 0;
@@ -717,6 +724,12 @@ footer .mail {
     font-size: 50px;
 }
 
+.section.map{
+    position: absolute;
+    margin-top: 80vh;
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 1000px) {
     .section.contact {
@@ -732,6 +745,90 @@ footer .mail {
         font-size: 1.5rem;
     }
 }
+
+/*
+╔═══════════════════════════════╗ 
+            réalisation
+╚═══════════════════════════════╝ 
+*/
+
+.section.realisation{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.section.realisation h1{
+    margin-bottom: 50px;
+}
+
+.section.realisation .row{
+    width: 60vw;
+    height: 200px;
+    margin: 20px auto;
+    transition: .3s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.realisation .row:hover{
+    height: 60vh;
+    width: 90vw;
+}
+
+.section.realisation .consultbiz{
+    background-image: url("../img/realisation/ConsultBiz.png");
+    height: 100%;
+    background-position: 20% 0%;
+    transition: .3s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.realisation .row:hover .consultbiz{
+    background-position: 50% 50%;
+}
+
+.section.realisation .getwid{
+    background-image: url("../img/realisation/Getwid.png");
+    height: 100%;
+    background-position: 0% 0%;
+    transition: .3s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.realisation .row:hover .getwid{
+    background-position: 0% 0%;
+}
+
+
+.section.realisation .workylite{
+    background-image: url("../img/realisation/Worky\ lite.png");
+    height: 100%;
+    background-position: 50% 50%;
+    transition: .3s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.realisation .row:hover .workylite{
+    background-position: 50% 50%;
+}
+
+.section.realisation .webion{
+    background-image: url("../img/realisation/webion.png");
+    height: 100%;
+    background-position: 50% 50%;
+    transition: .3s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.realisation .row:hover .webion{
+    background-position: 50% 50%;
+}
+
+.section.realisation .ratherapp{
+    background-image: url("../img/realisation/ratherApp.png");
+    height: 100%;
+    background-position: 0% 0%;
+    transition: .3s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.realisation .row:hover .ratherapp{
+    background-position: 0% 0%;
+}
+
 
 /*
 ╔═══════════════════════════════╗ 

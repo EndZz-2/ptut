@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <!-- <div class="section">
             <div class="row">
                 <div style="text-align: center;" class="col col-4">
                     <h1><span class="titre-dot">.</span>nospartenaires</h1>
@@ -73,7 +73,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="section pole">
             <div class="row" style="margin: 0% 2%;">
                 <div class="col col-4">
