@@ -63,12 +63,16 @@ body {
     color: #00FFCE;
 }
 
+.text-jaune {
+    color: #FFDA00;
+}
+
 /*
 ╔═══════════════════════════════╗ 
              navbar 
 ╚═══════════════════════════════╝ 
 */
-header{
+header {
     position: absolute;
     top: 0;
 }
@@ -141,6 +145,10 @@ header{
 .default-nav .link:hover::before {
     width: 100%;
 }
+
+/* .default-nav .link.active::before  {
+    width: 100%;
+} */
 
 @media only screen and (max-width: 1000px) {
     .default-nav {
@@ -345,11 +353,11 @@ footer .mail {
         text-align: center;
     }
 
-    footer .reseau a{
+    footer .reseau a {
         margin-left: 20px;
     }
 
-    footer .reseau a:first-child{
+    footer .reseau a:first-child {
         margin-left: 0px;
     }
 
@@ -383,7 +391,7 @@ footer .mail {
         display: none;
     }
 
-    footer .reseau .mail-res{
+    footer .reseau .mail-res {
         display: inline-block;
     }
 
@@ -436,7 +444,7 @@ footer .mail {
     height: 340px;
 }
 
-.text {
+.accueil .text {
     position: absolute;
     transform: translateY(50%);
     width: 500px;
@@ -475,7 +483,7 @@ footer .mail {
     margin-bottom: 20%;
 }
 
-.pole .services {
+.pole .service {
     position: absolute;
     left: 50%;
     transform: translateX(-50%) scale(1.5);
@@ -514,7 +522,7 @@ footer .mail {
         transform: translate(-50%, -50%);
     }
 
-    .text {
+    .accueil .text {
         position: relative;
         transform: translateY(0%);
         width: 100%;
@@ -524,7 +532,7 @@ footer .mail {
         margin-bottom: 200px;
     }
 
-    .section.pole .services {
+    .section.pole .service {
         margin-top: 50px;
     }
 }
@@ -599,7 +607,7 @@ footer .mail {
     transform: scale(1.2);
 }
 
-.card:hover~.services {
+.card:hover~.service {
     margin-top: 450px;
 }
 
@@ -688,7 +696,7 @@ footer .mail {
         text-align: center;
     }
 
-    .services {
+    .service {
         position: absolute;
         left: 50%;
         transform: translateX(-50%) scale(1.5);
@@ -724,7 +732,7 @@ footer .mail {
     font-size: 50px;
 }
 
-.section.map{
+.section.map {
     position: absolute;
     margin-top: 80vh;
     width: 100%;
@@ -752,83 +760,262 @@ footer .mail {
 ╚═══════════════════════════════╝ 
 */
 
-.section.realisation{
+.section.realisation {
     margin-top: 150px;
     text-align: center;
 }
 
-.section.realisation h1{
+.section.realisation h1 {
     margin-bottom: 50px;
 }
 
-.section.realisation .row{
+.section.realisation .row {
     width: 60vw;
     height: 200px;
     margin: 20px auto;
     transition: .3s cubic-bezier(.40, 0, 0, 1);
 }
 
-.section.realisation .row:hover{
-    height: 60vh;
+.section.realisation .row:hover {
+    height: 40vh;
     width: 90vw;
 }
 
-.section.realisation .consultbiz{
+.section.realisation .consultbiz {
     background-image: url("../img/realisation/ConsultBiz.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 100%;
-    background-position: 20% 0%;
+    background-position: 50% 50%;
     transition: .3s cubic-bezier(.40, 0, 0, 1);
 }
 
-.section.realisation .row:hover .consultbiz{
-    background-position: 50% 50%;
-}
 
-.section.realisation .getwid{
+.section.realisation .getwid {
     background-image: url("../img/realisation/Getwid.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 100%;
-    background-position: 0% 0%;
+    background-position: 50% 50%;
     transition: .3s cubic-bezier(.40, 0, 0, 1);
 }
 
-.section.realisation .row:hover .getwid{
-    background-position: 0% 0%;
-}
-
-
-.section.realisation .workylite{
+.section.realisation .workylite {
     background-image: url("../img/realisation/Worky\ lite.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 100%;
     background-position: 50% 50%;
     transition: .3s cubic-bezier(.40, 0, 0, 1);
 }
 
-.section.realisation .row:hover .workylite{
-    background-position: 50% 50%;
-}
-
-.section.realisation .webion{
+.section.realisation .webion {
     background-image: url("../img/realisation/webion.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 100%;
     background-position: 50% 50%;
     transition: .3s cubic-bezier(.40, 0, 0, 1);
 }
 
-.section.realisation .row:hover .webion{
-    background-position: 50% 50%;
-}
-
-.section.realisation .ratherapp{
+.section.realisation .ratherapp {
     background-image: url("../img/realisation/ratherApp.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 100%;
-    background-position: 0% 0%;
+    background-position: 50% 50%;
     transition: .3s cubic-bezier(.40, 0, 0, 1);
 }
 
-.section.realisation .row:hover .ratherapp{
-    background-position: 0% 0%;
+
+/*
+╔═══════════════════════════════╗ 
+           Services
+╚═══════════════════════════════╝ 
+*/
+
+.section.services h1 {
+    margin-top: 8%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
+.section.services .developer {
+    background-image: url(../img/services/developer.jpg);
+    background-size: 100%;
+    width: 500px;
+    height: 300px;
+    float: right;
+    margin-right: 50px;
+}
+
+.section.services .text {
+    width: 500px;
+    margin-top: 0;
+}
+
+.section.etape {
+    margin-top: 150px;
+}
+
+.section.etape h1 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.section.etape .rencontre{
+    border-top: #ff1d4e solid 4px;
+    padding: 60px 0;
+}
+
+.section.etape .text{
+    max-width: 600px;
+    margin-left: 50px;
+}
+
+.section.etape .rencontre .text{
+    margin-left: 30%;
+}
+
+.section.etape .realisation .text{
+    margin-left: 30%;
+}
+
+.section.etape .img{
+    background-size: 100%;
+    width: 500px;
+    height: 300px;
+    margin: 0 50px;
+}
+
+.section.etape .img-1{
+    background-image: url(../img/services/rencontre.jpg);
+}
+
+.section.etape .img-2{
+    background-image: url(../img/services/conception.jpg);
+    margin-left: 30%;
+}
+
+.section.etape .img-3{
+    background-image: url(../img/services/realisation.jpg);
+}
+
+.section.etape .conception{
+    border-top: #00FFCE solid 4px;
+    padding: 60px 0;
+}
+
+.section.etape .realisation{
+    border-top: #FFDA00 solid 4px;
+    padding: 60px 0;
+}
+
+
+@media only screen and (max-width: 1350px) {
+    .section.services h1 {
+        margin-top: 100px;
+    }
+
+    .section.services .developer {
+        float: left;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .section.services .text {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .section.etape .rencontre .text{
+        margin-left: 0;
+    }
+
+    .section.etape .realisation .text{
+        margin-left: 0;
+    }
+
+    .section.etape h2{
+        margin-top: 0;
+    }
+
+    .section.etape {
+        margin-top: 100px;
+    }
+
+    .section.etape .col-2{
+        margin-left: 0;
+    }
+
+    .section.etape .text{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 500px; 
+        margin: 0;   
+    }
+
+    .section.etape .img{
+        float: left;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section.services .developer {
+        width: 90%;
+        background-repeat: no-repeat;
+    }
+
+    .section.services .text {
+        font-size: .8rem;
+        width: 90%;
+    }
+
+    .section.etape .text{
+        width: 90%;    
+    }
+
+    .section.etape .img{
+        width: 90%;
+        background-repeat: no-repeat;
+    }
+}
+
+/*
+╔═══════════════════════════════╗ 
+           Services
+╚═══════════════════════════════╝ 
+*/
+
+.section.apropos{
+    margin-top: 8%;
+}
+
+.section.apropos img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%) scale(2.5);
+    margin: 2% 0;
+}
+
+.section.apropos .text{
+    max-width: 60vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 100px;
+}
+
+.section.apropos .center {
+    text-align: center;
+}
 
 /*
 ╔═══════════════════════════════╗ 

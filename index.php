@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Codd(in) | Accueil</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -26,7 +26,7 @@
         <img class="AYI-back" src="img/AreYouIn-.svg" alt="?">
     </div>
     <div class="web-content">
-        <div class="section">
+        <div class="section accueil">
             <div class="row">
                 <div class="col col-2">
                     <div>
@@ -107,7 +107,7 @@
                             vous proposons à travers notre Pôle Rédaction de rédiger le contenu de toutes les pages de
                             votre site. Un site vitrine vide ne fait pas bonne mine !</p>
                     </div>
-                    <a class="btn services" href="">Nos Services</a>
+                    <a class="btn service" href="">Nos Services</a>
                 </div>
             </div>
         </div>
