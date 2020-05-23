@@ -480,9 +480,55 @@ body{
 }
 
 @media only screen and (max-width: 1000px) {
+    .section{
+        margin: 0;
+    }
+
     .ligne{
         display: none;
     } 
+
+    .card{
+        margin-top: 50px;
+        position: relative;
+        width: 100%;
+    }
+
+    .card.design {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .card.web {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .card.redaction {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .card .content{
+        padding-bottom: 50px;  
+        transform: translateY(0%);
+        opacity: 1;
+        z-index: -1;
+        transition: .5s cubic-bezier(.40, 0, 0, 1);
+        text-align: center;
+    }
+
+    .services{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scale(1.5);
+        margin-top: 50px;
+        margin-bottom: 5%;
+    }
+
+    .card:hover .rond {
+        transform: scale(1);
+    }
 }
 
 

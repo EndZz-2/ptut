@@ -84,7 +84,7 @@
                         <h2>Nos trois pôles</h2>
                     </div>
                 </div>
-                <div class="col col-4">
+                <div class="col col-4" style="margin: 0;">
                     <div class="ligne"></div>
                     <div class="card design">
                         <div class="rond"></div>
@@ -107,8 +107,6 @@
                             vous proposons à travers notre Pôle Rédaction de rédiger le contenu de toutes les pages de
                             votre site. Un site vitrine vide ne fait pas bonne mine !</p>
                     </div>
-                </div>
-                <div class="col col-4">
                     <a class="btn services" href="">Nos Services</a>
                 </div>
             </div>
