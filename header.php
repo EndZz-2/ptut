@@ -38,6 +38,7 @@
                 <li><a class="link" href="">Services</a></li>
                 <li><a class="link" href="realisation.php">Nos réalisations</a></li>
                 <li><a class="link" href="">À propos</a></li>
+                <li><a class="link" href="contact.php">Contact</a></li>               
             </ul>
         </div>
     </nav>

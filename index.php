@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section pole">
             <div class="row" style="margin: 0% 2%;">
                 <div class="col col-4">
                     <h1><span class="titre-dot">.</span>Conception</h1>
@@ -111,8 +111,10 @@
                 </div>
             </div>
         </div>
-
     </div>
+    <?php
+        require 'footer.php';
+    ?>
     <script src="js/burger.js"></script>
 </body>
 
