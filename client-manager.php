@@ -36,7 +36,7 @@
     </div>
     <div id="modal-bg"></div>
 
-    <div class="content">
+    <div class="section manage">
         <div id="db"></div>
         <form action="javascript:void(0);" class="form-add">
             <div class="group">
@@ -51,6 +51,7 @@
     </div>
     </form>
     <script src="js/main.js"></script>
+    <script src="js/burger.js"></script>
     <script src="js/addclient.js"></script>
 </body>
 

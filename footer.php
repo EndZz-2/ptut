@@ -15,13 +15,13 @@
     </div>
     <div class="row">
         <div class="lien lien-l1">
-            <a href="">Services</a>
-            <a href="">Nos réalisations</a>
-            <a href="">A propos</a>
-            <a href="">Contact</a>
+            <a href="services.php">Services</a>
+            <a href="realisation.php">Nos réalisations</a>
+            <a href="apropos.php">A propos</a>
+            <a href="contact.php">Contact</a>
         </div>
         <div class="lien lien-l2">
-            <a href="">Plan du site</a>
+            <a href="plan.php">Plan du site</a>
         </div>
         <a class="mail" href="mailto:contact.coddin@gmail.com" target="_blank"><i class="fas fa-envelope"></i> contact.coddin@gmail.com</a>        
     </div>

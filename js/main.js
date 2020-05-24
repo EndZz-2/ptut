@@ -190,7 +190,9 @@ window.addEventListener('click', function (e) {
 });
 
 let textarea = document.querySelector("#contact-textarea");
+if(textarea != null){
 textarea.addEventListener('keyup', function () {
     textarea.style.height = "20px";
     textarea.style.height = (15 + textarea.scrollHeight) + "px";
 })
+}
