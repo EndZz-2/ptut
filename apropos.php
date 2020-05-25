@@ -73,7 +73,7 @@
                     <div class="img"></div>
                     <div class="content">
                         <div class="titre">Lorenzo Tringali</div>
-                        <div class="sous-titre">Developpeur-web</div>
+                        <div class="sous-titre">Développeur-web</div>
                         <blockquote cite="Izuku midoriya" class="quote">
                             Les rêves peuvent devenir réalité. <br><br>
                         </blockquote>
@@ -121,7 +121,7 @@
                     <div class="img"></div>
                     <div class="content">
                         <div class="titre">Hugo Legrand</div>
-                        <div class="sous-titre">Developpeur</div>
+                        <div class="sous-titre">Développeur-web</div>
                         <blockquote cite="Solid Snake" class="quote">
                             A strong man doesn't need to read the future, he makes his own.
                         </blockquote>
