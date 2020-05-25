@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Projet Tutoré MMI1 Codd in" company="PTUTMMITLN" webLink="http://coddin.mmitoulon.com/" view-date="2020-03-16" view-index="0" gantt-divider-location="814" resource-divider-location="300" version="2.8.10" locale="fr">
+    <description><![CDATA[Le GANTT de notre projet tutoré de première année en DUT MMI, IUT de Toulon. 
+Le projet concerne la création d'une agence de développement web pour le compte de PTUTMMITLN.]]></description>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="334" order="0"/>
+        <field id="tpd4" name="Date de début" width="231" order="1"/>
+        <field id="tpd5" name="Date de fin" width="230" order="2"/>
+        <timeline><![CDATA[288]]></timeline>
+        <option id="color.recent"><![CDATA[#33ff33 #66ff66 #ff0033 #0099ff #ff3333 #ff0000 #ff6666]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="france">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"><![CDATA[New Year's Day]]></date>
+        <date year="" month="5" date="1" type="HOLIDAY"><![CDATA[Labour Day]]></date>
+        <date year="" month="5" date="8" type="HOLIDAY"><![CDATA[V-E Day]]></date>
+        <date year="" month="7" date="14" type="HOLIDAY"><![CDATA[Bastille Day]]></date>
+        <date year="" month="8" date="15" type="HOLIDAY"><![CDATA[Assumption Day]]></date>
+        <date year="" month="11" date="1" type="HOLIDAY"><![CDATA[All Saints Day]]></date>
+        <date year="" month="11" date="11" type="HOLIDAY"><![CDATA[Armistice Day]]></date>
+        <date year="" month="12" date="25" type="HOLIDAY"><![CDATA[Christmas Day]]></date>
+        <date year="2008" month="5" date="12" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2009" month="6" date="1" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2009" month="7" date="13" type="NEUTRAL"><![CDATA[Bastille Day]]></date>
+        <date year="2010" month="4" date="5" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2010" month="5" date="13" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2010" month="5" date="24" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2011" month="4" date="25" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2011" month="5" date="29" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2011" month="6" date="2" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2011" month="6" date="13" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2011" month="6" date="19" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2012" month="1" date="2" type="HOLIDAY"><![CDATA[New Years Day (in lieu)]]></date>
+        <date year="2012" month="4" date="9" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2012" month="5" date="17" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2012" month="5" date="28" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2012" month="6" date="3" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2012" month="6" date="17" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2012" month="11" date="12" type="HOLIDAY"><![CDATA[Armistice Day (in Lieu)]]></date>
+        <date year="2012" month="12" date="25" type="HOLIDAY"><![CDATA[Christmas Day]]></date>
+        <date year="2013" month="4" date="1" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2013" month="5" date="9" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2013" month="5" date="20" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2013" month="5" date="26" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2013" month="6" date="16" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2014" month="4" date="21" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2014" month="5" date="25" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2014" month="5" date="29" type="NEUTRAL"><![CDATA[Ascension Day]]></date>
+        <date year="2014" month="6" date="9" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2014" month="6" date="15" type="HOLIDAY"><![CDATA[Fathers Day]]></date>
+        <date year="2015" month="4" date="6" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2015" month="5" date="14" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2015" month="5" date="24" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2015" month="5" date="25" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2015" month="6" date="21" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2016" month="3" date="28" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2016" month="5" date="5" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2016" month="5" date="16" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2016" month="5" date="29" type="NEUTRAL"><![CDATA[Mothers Day]]></date>
+        <date year="2016" month="6" date="19" type="NEUTRAL"><![CDATA[Fathers Day]]></date>
+        <date year="2016" month="12" date="26" type="HOLIDAY"><![CDATA[Christmas Day (observed)]]></date>
+        <date year="2017" month="4" date="17" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2017" month="5" date="25" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2017" month="5" date="28" type="NEUTRAL"><![CDATA[Mother's Day]]></date>
+        <date year="2017" month="6" date="5" type="HOLIDAY"><![CDATA[Whitmonday]]></date>
+        <date year="2017" month="6" date="18" type="NEUTRAL"><![CDATA[Father's Day]]></date>
+        <date year="2018" month="4" date="2" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2018" month="5" date="10" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2018" month="5" date="21" type="HOLIDAY"><![CDATA[Whit Monday]]></date>
+        <date year="2018" month="5" date="27" type="NEUTRAL"><![CDATA[Mother's Day]]></date>
+        <date year="2018" month="6" date="17" type="NEUTRAL"><![CDATA[Father's Day]]></date>
+        <date year="2019" month="4" date="22" type="HOLIDAY"><![CDATA[Easter Monday]]></date>
+        <date year="2019" month="5" date="30" type="HOLIDAY"><![CDATA[Ascension Day]]></date>
+        <date year="2019" month="6" date="10" type="HOLIDAY"><![CDATA[Whit Monday]]></date>
+        <date year="2019" month="5" date="26" type="NEUTRAL"><![CDATA[Mother's Day]]></date>
+        <date year="2019" month="6" date="16" type="NEUTRAL"><![CDATA[Father's Day]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="1 Réaliser la maquette UX" color="#8cb6ce" meeting="false" start="2020-03-16" duration="4" complete="100" thirdDate="2020-03-16" thirdDate-constraint="1" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="2 Réaliser la maquette UI" color="#8cb6ce" meeting="false" start="2020-03-27" duration="4" complete="50" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="3 Étude de marché site web" color="#8cb6ce" meeting="false" start="2020-03-04" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+            <depend id="36" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="4 Rédiger la partie rédactionnelle du site" color="#8cb6ce" meeting="false" start="2020-03-30" duration="1" complete="0" thirdDate="2020-03-30" thirdDate-constraint="1" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="5 Coder les pages du site" color="#8cb6ce" meeting="false" start="2020-04-06" duration="12" complete="0" thirdDate="2020-04-06" thirdDate-constraint="1" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="6 Coder les pages confidentielles du site" color="#8cb6ce" meeting="false" start="2020-04-18" duration="5" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="7 Créer le côté CMS du site" color="#8cb6ce" meeting="false" start="2020-04-23" duration="5" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="8 Intégrer le teaser sur le site" color="#8cb6ce" meeting="false" start="2020-05-07" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="9 Créer la base de données du site" color="#8cb6ce" meeting="false" start="2020-03-04" duration="5" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" name="10 Référencer le site" color="#8cb6ce" meeting="false" start="2020-05-24" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="11 Activation du site vitrine" color="#ff3333" meeting="true" start="2020-05-24" duration="0" complete="0" thirdDate="2020-05-24" thirdDate-constraint="1" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="12 Définir le nom de l'agence" color="#ff0033" meeting="true" start="2020-03-08" duration="0" complete="0" thirdDate="2020-03-08" thirdDate-constraint="1" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="13 Définir l'activité de l'agence" color="#8cb6ce" meeting="false" start="2020-03-04" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+            <depend id="36" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" name="14 Définir le statut juridique de l'agence" color="#8cb6ce" meeting="false" start="2020-03-05" duration="2" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="15 Décrire l'agence et ses valeurs" color="#8cb6ce" meeting="false" start="2020-03-08" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="16" name="16 Étude de marché interne" color="#8cb6ce" meeting="false" start="2020-03-05" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="17" name="17 Étude de marché externe" color="#8cb6ce" meeting="false" start="2020-03-05" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" name="18 Réserver un nom de domaine" color="#8cb6ce" meeting="false" start="2020-03-08" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="19" name="19 Créer un serveur Discord, Google Drive, mail" color="#ff0000" meeting="true" start="2020-03-08" duration="0" complete="100" thirdDate="2020-03-08" thirdDate-constraint="1" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="20" name="20 Rédiger et envoyer le premier rapport hebdomadaire" color="#66ff66" meeting="true" start="2020-03-08" duration="0" complete="100" thirdDate="2020-03-08" thirdDate-constraint="1" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="275" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-03-15" duration="0" complete="100" thirdDate="2020-03-15" thirdDate-constraint="1" expand="true"/>
+        <task id="277" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-03-22" duration="0" complete="100" thirdDate="2020-03-22" thirdDate-constraint="1" expand="true"/>
+        <task id="282" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-03-29" duration="0" complete="100" thirdDate="2020-03-29" thirdDate-constraint="1" expand="true"/>
+        <task id="285" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-04-05" duration="0" complete="0" thirdDate="2020-04-05" thirdDate-constraint="1" expand="true"/>
+        <task id="287" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-04-12" duration="0" complete="0" thirdDate="2020-04-12" thirdDate-constraint="1" expand="true"/>
+        <task id="288" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-04-19" duration="0" complete="0" thirdDate="2020-04-19" thirdDate-constraint="1" expand="true"/>
+        <task id="289" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-04-26" duration="0" complete="0" thirdDate="2020-04-26" thirdDate-constraint="1" expand="true"/>
+        <task id="290" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-05-03" duration="0" complete="0" thirdDate="2020-05-03" thirdDate-constraint="1" expand="true"/>
+        <task id="316" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-05-10" duration="0" complete="0" thirdDate="2020-05-10" thirdDate-constraint="1" expand="true"/>
+        <task id="318" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-05-17" duration="0" complete="0" thirdDate="2020-05-17" thirdDate-constraint="1" expand="true"/>
+        <task id="320" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-05-24" duration="0" complete="0" thirdDate="2020-05-24" thirdDate-constraint="1" expand="true"/>
+        <task id="322" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-05-31" duration="0" complete="0" thirdDate="2020-05-31" thirdDate-constraint="1" expand="true"/>
+        <task id="341" name="[WEEKLY] Envoyer le rapport hebdomadaire" color="#33ff33" meeting="true" start="2020-06-07" duration="0" complete="0" thirdDate="2020-06-07" thirdDate-constraint="1" expand="true"/>
+        <task id="21" name="21 Audit (se renseigner sur les livrables)" color="#8cb6ce" meeting="false" start="2020-03-02" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="33" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="22" name="22 Créer le PERT" color="#8cb6ce" meeting="false" start="2020-03-24" duration="2" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" name="23 Créer le GANTT" color="#8cb6ce" meeting="false" start="2020-03-26" duration="2" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="24" name="24 Créer la matrice RACI" color="#8cb6ce" meeting="false" start="2020-03-24" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="25" name="25 Faire l'organigramme des tâches WBS" color="#8cb6ce" meeting="false" start="2020-03-20" duration="2" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="26" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="26" name="26 Faire le tableau des tâches" color="#8cb6ce" meeting="false" start="2020-03-22" duration="2" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="27" name="27 Rédiger le cahier des charges" color="#8cb6ce" meeting="false" start="2020-03-09" duration="3" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="28" name="28 Assurer les rendus des livrables" color="#ff6666" meeting="true" start="2020-03-08" duration="0" complete="100" thirdDate="2020-03-08" thirdDate-constraint="1" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="29" name="29 Organiser des réunions" color="#ff3333" meeting="true" start="2020-03-23" duration="0" complete="100" thirdDate="2020-03-23" thirdDate-constraint="1" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="30" name="30 Rédiger le contexte pour le cahier de conception" color="#8cb6ce" meeting="false" start="2020-03-28" duration="1" complete="100" thirdDate="2020-03-28" thirdDate-constraint="1" expand="true">
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="31" name="31 Envoyer le cahier des charges" color="#ff3333" meeting="true" start="2020-03-22" duration="0" complete="100" thirdDate="2020-03-22" thirdDate-constraint="1" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="32" name="32 Envoyer la charte graphique" color="#ff3333" meeting="true" start="2020-04-05" duration="0" complete="0" thirdDate="2020-04-05" thirdDate-constraint="1" expand="true">
+            <depend id="35" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="33" name="33 Attribuer les rôles à chaque membre" color="#8cb6ce" meeting="false" start="2020-03-03" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+            <depend id="29" type="2" difference="0" hardness="Strong"/>
+            <depend id="44" type="2" difference="0" hardness="Strong"/>
+            <depend id="54" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="34" name="34 Envoyer le contexte, WBS, tableau des tâches et GANTT" color="#ff0000" meeting="true" start="2020-03-29" duration="0" complete="100" thirdDate="2020-03-29" thirdDate-constraint="1" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="35" name="35 Préparer l'oral de la revue de projet" color="#8cb6ce" meeting="false" start="2020-04-20" duration="3" complete="0" thirdDate="2020-04-20" thirdDate-constraint="1" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="36" name="36 Réfléchir à l'identité visuelle" color="#8cb6ce" meeting="false" start="2020-03-05" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="37" type="2" difference="0" hardness="Strong"/>
+            <depend id="38" type="2" difference="0" hardness="Strong"/>
+            <depend id="39" type="2" difference="0" hardness="Strong"/>
+            <depend id="40" type="2" difference="0" hardness="Strong"/>
+            <depend id="41" type="2" difference="0" hardness="Strong"/>
+            <depend id="42" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="37" name="37 Créer le logotype" color="#ff0000" meeting="true" start="2020-03-08" duration="0" complete="100" thirdDate="2020-03-08" thirdDate-constraint="1" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="38" name="38 Créer les pictogrammes" color="#8cb6ce" meeting="false" start="2020-03-16" duration="2" complete="100" thirdDate="2020-03-16" thirdDate-constraint="1" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="39" name="39 Créer les illustrations" color="#8cb6ce" meeting="false" start="2020-03-23" duration="2" complete="100" thirdDate="2020-03-23" thirdDate-constraint="1" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="40" name="40 Créer les animations" color="#8cb6ce" meeting="false" start="2020-03-23" duration="4" complete="100" thirdDate="2020-03-23" thirdDate-constraint="1" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="41" name="41 Choisir les typographies" color="#8cb6ce" meeting="false" start="2020-03-06" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="42" name="42 Choisir les couleurs" color="#8cb6ce" meeting="false" start="2020-03-06" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="43" name="43 Rédiger et mettre en page la charte graphique" color="#8cb6ce" meeting="false" start="2020-03-30" duration="4" complete="100" thirdDate="2020-03-30" thirdDate-constraint="1" expand="true">
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="44" name="44 Définir la campagne de communication événementielle" color="#8cb6ce" meeting="false" start="2020-03-04" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="46" type="2" difference="0" hardness="Strong"/>
+            <depend id="49" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="45" name="45 Créer les jeux/concours sur les réseaux sociaux" color="#8cb6ce" meeting="false" start="2020-04-01" duration="4" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="53" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="46" name="46 Réaliser les affiches et visuels pour l'événement" color="#8cb6ce" meeting="false" start="2020-03-30" duration="2" complete="0" thirdDate="2020-03-30" thirdDate-constraint="1" expand="true">
+            <depend id="45" type="2" difference="0" hardness="Strong"/>
+            <depend id="48" type="2" difference="0" hardness="Strong"/>
+            <depend id="50" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="47" name="47 Étudier et analyser l'impact de la campagne de communication" color="#8cb6ce" meeting="false" start="2020-05-11" duration="1" complete="0" thirdDate="2020-05-11" thirdDate-constraint="1" expand="true">
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="48" name="48 Confectionner les goodies" color="#8cb6ce" meeting="false" start="2020-04-01" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="53" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="49" name="49 Créer un Facebook, Twitter, Instagram" color="#8cb6ce" meeting="false" start="2020-03-05" duration="1" complete="100" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="45" type="2" difference="0" hardness="Strong"/>
+            <depend id="50" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="50" name="50 Créer une bannière et photo de profil pour les RS" color="#8cb6ce" meeting="false" start="2020-04-06" duration="1" complete="0" thirdDate="2020-04-06" thirdDate-constraint="1" expand="true">
+            <depend id="51" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="51" name="51 Rédiger et poster des publications pour les RS" color="#8cb6ce" meeting="false" start="2020-04-07" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="52" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="52" name="52 Promouvoir l'agence sur les RS" color="#8cb6ce" meeting="false" start="2020-04-08" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="53" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="53" name="53 Déployer la campagne de communication" color="#8cb6ce" meeting="false" start="2020-04-09" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="47" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="54" name="54 Trouver des idées pour le teaser de lancement" color="#8cb6ce" meeting="false" start="2020-03-24" duration="1" complete="100" thirdDate="2020-03-24" thirdDate-constraint="1" expand="true">
+            <depend id="55" type="2" difference="0" hardness="Strong"/>
+            <depend id="56" type="2" difference="0" hardness="Strong"/>
+            <depend id="57" type="2" difference="0" hardness="Strong"/>
+            <depend id="59" type="2" difference="0" hardness="Strong"/>
+            <depend id="60" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="55" name="55 Réaliser le storyboard" color="#8cb6ce" meeting="false" start="2020-04-06" duration="4" complete="0" thirdDate="2020-04-06" thirdDate-constraint="1" expand="true">
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="56" name="56 Faire du motion design" color="#8cb6ce" meeting="false" start="2020-04-06" duration="14" complete="0" thirdDate="2020-04-06" thirdDate-constraint="1" expand="true">
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="57" name="57 Trouver des rush préexistants" color="#8cb6ce" meeting="false" start="2020-04-06" duration="2" complete="0" thirdDate="2020-04-06" thirdDate-constraint="1" expand="true">
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="58" name="58 Faire le montage du teaser" color="#8cb6ce" meeting="false" start="2020-04-20" duration="14" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="61" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="59" name="59 Choix des musiques" color="#8cb6ce" meeting="false" start="2020-04-06" duration="1" complete="0" thirdDate="2020-04-06" thirdDate-constraint="1" expand="true">
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="60" name="60 Écriture du script" color="#8cb6ce" meeting="false" start="2020-04-06" duration="3" complete="0" thirdDate="2020-04-06" thirdDate-constraint="1" expand="true">
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="61" name="61 Enregistrement et intégration des voix off" color="#8cb6ce" meeting="false" start="2020-05-05" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="175" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="175" name="62 Uploader le teaser" color="#8cb6ce" meeting="false" start="2020-05-06" duration="1" complete="0" thirdDate="2020-02-03" thirdDate-constraint="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="229" name="63 Vérifications finales" color="#8cb6ce" meeting="false" start="2020-05-25" duration="1" complete="0" thirdDate="2020-05-30" thirdDate-constraint="0" expand="true">
+            <depend id="235" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="235" name="64 Cahier de conception mis en ligne" color="#0099ff" meeting="true" start="2020-06-07" duration="0" complete="0" thirdDate="2020-06-07" thirdDate-constraint="1" expand="true">
+            <depend id="230" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="230" name="65 Soutenance des projets" color="#0099ff" meeting="true" start="2020-06-11" duration="0" complete="0" thirdDate="2020-06-11" thirdDate-constraint="1" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="THIVEL Hugo" function="Default:1" contacts="hugo.thivel@gmail.com" phone="07 89 09 29 79"/>
+        <resource id="1" name="DELZERS Manon" function="1" contacts="manon.delzers@gmail.com" phone="06 95 90 21 01"/>
+        <resource id="2" name="SCHMID Matthias" function="2" contacts="matthias.schmid@outlook.fr" phone=""/>
+        <resource id="3" name="KLUCZYNSKI Dorian" function="2" contacts="doriankluc@gmail.com" phone="06 95 78 35 14"/>
+        <resource id="4" name="DELPIANO Maxime" function="4" contacts="maxime.dlp83@gmail.com" phone="06 10 17 50 02"/>
+        <resource id="5" name="TRINGALI Lorenzo" function="5" contacts="lorenzo.tringali22@gmail.com" phone="07 67 78 16 14"/>
+        <resource id="6" name="LEGRAND Hugo" function="6" contacts="legrand.hugo83@hotmail.fr" phone="06 27 66 61 18"/>
+        <resource id="7" name="LACHAUME Christophe" function="7" contacts="cl.mmi.tln@gmail.com" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="275" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="277" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="282" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="285" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="287" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="288" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="289" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="290" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="316" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="318" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="320" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="322" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="341" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="24" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="29" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="31" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="41" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="42" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="47" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="50" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="51" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="52" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="59" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="60" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="175" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="235" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="230" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="41" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="42" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="47" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="49" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="61" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="175" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="230" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="43" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="44" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="47" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="53" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="54" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="55" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="57" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="60" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="175" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="230" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="44" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="46" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="47" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="49" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="50" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="54" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="56" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="57" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="59" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="60" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="61" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="175" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="230" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="37" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="38" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="39" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="42" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="43" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="50" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="54" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="55" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="58" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="59" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="61" resource-id="4" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="175" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="230" resource-id="4" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="175" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="235" resource-id="5" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="230" resource-id="5" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="27" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="35" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="38" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="40" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="41" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="48" resource-id="6" function="6" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="58" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="175" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="229" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="230" resource-id="6" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="7" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Assistant chef de projet, Secrétaire"/>
+        <role id="2" name="Community Manager, Graphiste"/>
+        <role id="3" name="Community Manager, Graphiste"/>
+        <role id="4" name="Graphiste, Tourneur Monteur"/>
+        <role id="5" name="Développeur"/>
+        <role id="6" name="Développeur, Graphiste"/>
+        <role id="7" name="Commanditaire"/>
+    </roles>
+</project>

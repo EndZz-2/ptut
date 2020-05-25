@@ -28,7 +28,7 @@ body {
 
 /*
 ╔═══════════════════════════════╗ 
-            components 
+            >components 
 ╚═══════════════════════════════╝ 
 */
 
@@ -69,7 +69,7 @@ body {
 
 /*
 ╔═══════════════════════════════╗ 
-             navbar 
+             >navbar 
 ╚═══════════════════════════════╝ 
 */
 header {
@@ -104,6 +104,7 @@ header {
     left: 100px;
     top: 30px;
     transition: all .2s ease;
+    z-index: 4;
 }
 
 .nav .logo.move {
@@ -197,7 +198,7 @@ header {
 
 /*
 ╔═══════════════════════════════╗ 
-          admin navbar 
+          >admin navbar 
 ╚═══════════════════════════════╝ 
 */
 
@@ -258,8 +259,6 @@ header {
     display: block;
 }
 
-
-
 .admin-nav ul {
     list-style-type: none;
     margin: 0;
@@ -313,7 +312,7 @@ header {
 
 /*
 ╔═══════════════════════════════╗ 
-        responsive navbar
+        >responsive navbar
 ╚═══════════════════════════════╝ 
 */
 
@@ -398,9 +397,26 @@ header {
 
 #menu .admin-arrow {
     position: absolute;
-    top: 30%;
+    top: 27%;
     left: 50%;
-    transform: scale(6);
+    transform: translateX(-50%);
+    transition: 0.3s cubic-bezier(.40, 0, 0, 1);
+    cursor: pointer;
+}
+
+#menu .admin-arrow i{
+    transform: scale(6);}
+
+#menu .admin-arrow::after{
+    content: "Navigation Utilisateur";
+    position: absolute;
+    min-width: 170px;
+    top: 65px;
+    transform: translateX(-54%);
+}
+
+#menu ul.out~ .admin-arrow {
+    top: 22%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -417,7 +433,7 @@ header {
 
 /*
 ╔═══════════════════════════════╗ 
-            footer
+            >footer
 ╚═══════════════════════════════╝ 
 */
 
@@ -429,7 +445,7 @@ footer {
 }
 
 footer h4 {
-    font-size: 80px;
+    font-size: 60px;
     margin: 0;
 }
 
@@ -440,7 +456,7 @@ footer .reseau {
 }
 
 footer .reseau i {
-    transform: scale(2.5);
+    transform: scale(2);
     margin-left: 90px;
     transition: .3s cubic-bezier(.40, 0, 0, 1);
     cursor: pointer;
@@ -448,7 +464,7 @@ footer .reseau i {
 }
 
 footer .reseau i:hover {
-    transform: scale(3.3);
+    transform: scale(2.5);
 }
 
 footer .reseau .mail-res {
@@ -559,7 +575,7 @@ footer .mail {
 
 /*
 ╔═══════════════════════════════╗ 
-            index 
+            >index 
 ╚═══════════════════════════════╝ 
 */
 
@@ -599,14 +615,33 @@ footer .mail {
     -webkit-user-drag: none;
 }
 
-.video {
+.video-container{
     width: 100%;
+}
+
+.video {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     height: 340px;
+    outline: none;
+
+    background-color: rgba(0, 0, 0, 0.90);
+    height: 340px;
+    width: 604.44px;
+}
+
+#countdown{    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 4em;    
 }
 
 .accueil .text {
-    position: absolute;
-    transform: translateY(50%);
+    position: relative;
+    transform: translateY(30%);
     width: 500px;
 }
 
@@ -653,7 +688,7 @@ footer .mail {
 }
 
 .section.pole {
-    margin-bottom: 600px;
+    margin-bottom: 37%;
 }
 
 
@@ -664,7 +699,7 @@ footer .mail {
 
     .banner .AYI-back {
         height: 60vw;
-    }
+    }    
 }
 
 @media only screen and (max-width: 1000px) {
@@ -682,6 +717,15 @@ footer .mail {
         transform: translate(-50%, -50%);
     }
 
+    .video-container {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .video {
+        width: 96%;
+    }
+
     .accueil .text {
         position: relative;
         transform: translateY(0%);
@@ -697,9 +741,15 @@ footer .mail {
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .video {
+        height: 280px;
+    }
+}
+
 /*
 ╔═══════════════════════════════╗ 
-           index card
+           >index card
 ╚═══════════════════════════════╝ 
 */
 
@@ -875,7 +925,7 @@ footer .mail {
 
 /*
 ╔═══════════════════════════════╗ 
-            contact
+            >contact
 ╚═══════════════════════════════╝ 
 */
 
@@ -890,6 +940,14 @@ footer .mail {
 
 .section.contact h1 {
     font-size: 50px;
+}
+
+.section.contact #mail{
+    margin-right: 0;
+}
+
+.form-contact #mail{
+    margin-right: 0;
 }
 
 .section.map {
@@ -913,10 +971,22 @@ footer .mail {
         font-size: 1.5rem;
     }
 }
+/*
+╔═══════════════════════════════╗ 
+            >merci
+╚═══════════════════════════════╝ 
+*/
+
+.section.merci{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*
 ╔═══════════════════════════════╗ 
-            réalisation
+            >réalisation
 ╚═══════════════════════════════╝ 
 */
 
@@ -990,7 +1060,7 @@ footer .mail {
 
 /*
 ╔═══════════════════════════════╗ 
-           Services
+           >Services
 ╚═══════════════════════════════╝ 
 */
 
@@ -1150,7 +1220,7 @@ footer .mail {
 
 /*
 ╔═══════════════════════════════╗ 
-           Services
+           >arpros
 ╚═══════════════════════════════╝ 
 */
 
@@ -1181,7 +1251,7 @@ footer .mail {
 
 .section.apropos .card {
     position: relative;
-    width: 350px;
+    width: 280px;
     max-height: 400px;
     background-color: #fff;
     padding: 1.5em;
@@ -1235,6 +1305,7 @@ footer .mail {
     border-radius: 50%;
     margin: auto;
 }
+
 
 .section.apropos .card.chef .img {
     background-image: url('../img/obs/Hugo\ pruneau.jpg');
@@ -1317,14 +1388,32 @@ footer .mail {
     width: 33.33%;
 }
 
-@media only screen and (max-width: 1680px) {
+@media only screen and (max-width: 1010px) {
     .section.apropos .col-custom {
         width: 50%;
+    }
+
+    .section.apropos .f-l{
+        float: left;
+        margin-left: 50px;
+    }
+    
+    .section.apropos .f-r{
+        float: right;
+        margin-right: 50px;
+    }
+
+    .section.apropos .card:not(.chef){
+        left: 0;
+        transform: translate(0) scale(1);
+    }
+
+    .section.apropos .card:not(.chef):hover{
+        transform: translate(0) scale(1.1);
     }
 }
 
 @media only screen and (max-width: 826px) {
-
     .section.apropos .col-custom,
     .section.apropos .col-4 {
         margin-left: 0;
@@ -1341,12 +1430,29 @@ footer .mail {
         text-align: center;
     }
 
+    .section.apropos .f-l{
+        float: none;
+        margin-left: 0;
+    }
+    
+    .section.apropos .f-r{
+        float: none;
+        margin-right: 0;
+    }
 
+    .section.apropos .card:not(.chef){
+        left: 50%;
+        transform: translate(-50%) scale(1);
+    }
+
+    .section.apropos .card:not(.chef):hover{
+        transform: translate(-50%) scale(1.1);
+    }
 }
 
 /*
 ╔═══════════════════════════════╗ 
-           manage page
+           >manage page
 ╚═══════════════════════════════╝ 
 */
 
@@ -1420,7 +1526,85 @@ footer .mail {
 
 /*
 ╔═══════════════════════════════╗ 
-            input
+            >login
+╚═══════════════════════════════╝ 
+*/
+
+.login-logo{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+    top: 30px;
+    transition: all .2s ease;
+}
+
+.login-logo:hover{
+    transform: translateX(-50%) scale(1.65);
+}
+
+.section.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section.login .flogin {
+    width: 265px;
+    text-align: center;
+}
+
+.section.login .flogin .forgot{
+    float: right;
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 1.5em;
+}
+
+.section.login .flogin .forgot:hover{
+    text-decoration: underline;
+}
+
+.section.login .flogin h1{
+   font-size: 3rem;
+}
+
+.section.login .flogin .titre-dot{
+    font-size: 5rem;
+ }
+
+.section.login .flogin input[type="text"] {
+    width: 250px;
+    margin: 0;
+    margin-bottom: 1.5em;
+}
+
+.section.login .flogin input[type="password"] {
+    width: 250px;
+    margin: 0;
+    margin-bottom: 1em;    
+}
+
+.section.login .fmdp {
+    text-align: center;
+}
+
+.section.login .fmdp input[type="text"]{
+    margin-bottom: 1.5em;
+    transition: .2s ease;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+/*
+╔═══════════════════════════════╗ 
+            >input
 ╚═══════════════════════════════╝ 
 */
 
@@ -1429,7 +1613,10 @@ footer .mail {
     float: left;
 }
 
-input[type="text"] {
+
+
+input[type="text"],
+input[type="password"] {
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
@@ -1441,6 +1628,7 @@ input[type="text"] {
     color: #fff;
     outline: none;
 }
+
 
 textarea {
     font-size: 18px;
@@ -1486,6 +1674,8 @@ label {
 
 input[type="text"]:focus~label,
 input[type="text"]:valid~label,
+input[type="password"]:focus~label,
+input[type="password"]:valid~label,
 textarea:focus~label,
 textarea:valid~label {
     top: -10px;
@@ -1495,6 +1685,8 @@ textarea:valid~label {
 
 input[type="text"]:focus,
 input[type="text"]:valid,
+input[type="password"]:focus,
+input[type="password"]:valid,
 textarea:focus,
 textarea:valid {
     border-bottom: 1px solid #ff1d4e;
@@ -1506,7 +1698,8 @@ textarea:valid {
         width: 300px;
     }
 
-    input[type="text"] {
+    input[type="text"],
+    input[type="password"]{
         width: 90%;
         max-width: 300px;
     }
@@ -1519,7 +1712,7 @@ textarea:valid {
 
 /*
 ╔═══════════════════════════════╗ 
-            Burger 
+            >Burger 
 ╚═══════════════════════════════╝ 
 */
 
@@ -1639,7 +1832,7 @@ textarea:valid {
 
 /*
 ╔═══════════════════════════════╗ 
-             modal
+             >modal
 ╚═══════════════════════════════╝ 
 */
 
@@ -1741,7 +1934,7 @@ textarea:valid {
 
 /*
 ╔═══════════════════════════════╗ 
-            tooltip
+            >tooltip
 ╚═══════════════════════════════╝ 
 */
 

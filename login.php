@@ -8,15 +8,22 @@
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Codd(in) | Login</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <?php
+    <header class="nav">
+        <a href="index.php"><img class="login-logo" src="img/coddin.svg" alt="logo"></a>
+    </header>
+    <div class="section login">
+        <div class="row">
+            <?php
         if(isset($_GET['u']) && isset($_GET['t'])){
             $Uname = $_GET['u'];
             $token = $_GET['t'];
@@ -31,38 +38,56 @@
             if($result != 0){
                 $data = $q->fetch();
     ?>
-    <form action="include/login.inc.php" method="POST">
-        <input type="hidden" name="uid" value="<?= $data['uid']?>">
-        <h1>Voici Le mot de pass de votre compte :</h1>
-        <input type="text" name="pass" value="<?= $data['password']?>" autocomplete="off" required>
-        <p>
-            Si vous souhaiter le modifier. Changer le puis appuyée confirmer. <br>
-            Le mot de passe restera modifiable par la suite.
-        </p>      
-        <input name="pass_change" class="btn" type="submit" value="Confirmé">
-    </form>
-    <?php
+            <form class="fmdp" action="include/login.inc.php" method="POST">
+                <input type="hidden" name="uid" value="<?= $data['uid']?>">
+                <h1><span class="titre-dot">.</span>Votre mot de passe</h1>
+                <input type="text" name="pass" value="<?= $data['password']?>" autocomplete="off" required>
+                <p>
+                    Cliquer pour le modifier.<br><br>
+                    Confirmer si le mot de passe vous convient. 
+                   
+                </p>
+                <input name="pass_change" class="btn" type="submit" value="Confirmé">
+            </form>
+            <?php
             }else{
     ?>
-    <form action="include/login.inc.php" method="POST">
-        <h1>Login</h1>
-        <input type="text" placeholder="Nom d'Utilisateur" name="user" autocomplete="off" required>
-        <input type="password" placeholder="Password" name="pass" autocomplete="off" required>
-        <input name="login" class="btn" type="submit" value="SEND">
-    </form>
-    <?php
+            <form class="flogin" action="include/login.inc.php" method="POST">
+                <h1><span class="titre-dot">.</span>Connexion</h1>
+                <div class="group">
+                    <input name="user" type="text" autocomplete="off" required>
+                    <label for="user">Nom d'Utilisateur</label>
+                </div>
+                <div class="group">.
+                    <input name="pass" type="password" autocomplete="off" required>
+                    <label for="pass">Mot de passe</label>
+                </div>
+                <a class="forgot" href="">Mot de passe oublié ?</a>
+                <input name="login" class="btn" type="submit" value="SEND">
+            </form>
+            <?php
             }
         }
         else{
     ?>
-    <form action="include/login.inc.php" method="POST">
-        <h1>Login</h1>
-        <input type="text" placeholder="Nom d'Utilisateur" name="user" autocomplete="off" required>
-        <input type="password" placeholder="Password" name="pass" autocomplete="off" required>
-        <input name="login" class="btn" type="submit" value="SEND">
-    </form>
-    <?php
+            <form class="flogin" action="include/login.inc.php" method="POST">
+                <h1><span class="titre-dot">.</span>Connexion</h1>
+                <div class="group">
+                    <input name="user" type="text" autocomplete="off" required>
+                    <label for="user">Nom d'Utilisateur</label>
+                </div>
+                <div class="group">
+                    <input name="pass" type="password" autocomplete="off" required>
+                    <label for="pass">Mot de passe</label>
+                </div>
+                <a class="forgot" href="">Mot de passe oublié ?</a>
+                <input name="login" class="btn" type="submit" value="SEND">
+            </form>
+            <?php
         }
     ?>
+        </div>
+    </div>
 </body>
+
 </html>

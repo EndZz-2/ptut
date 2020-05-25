@@ -15,7 +15,9 @@ burger.addEventListener('click', function () {
     menu.classList.toggle('active'); 
 }, false);
 
+if(adminBtn != null){
 adminBtn.addEventListener('click', function () {
     adminmenu.classList.toggle('active'); 
     ul.classList.toggle('out'); 
 }, false);
+}

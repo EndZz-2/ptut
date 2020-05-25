@@ -28,9 +28,14 @@
         <div class="section accueil">
             <div class="row">
                 <div class="col col-2">
-                    <div>
-                        <iframe class="video" src="https://streamable.com/e/yatxh1" frameborder="0"
-                            allowfullscreen></iframe>
+                    <div class="video-container">
+                        <div class="video">
+                            <div id="countdown"></div>
+                        </div>
+                        <!-- <video class="video" height="340" controls>
+                            <source src="vod/coddin.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video> -->
                     </div>
                 </div>
                 <div class="col col-2">
@@ -115,6 +120,36 @@
         require 'footer.php';
     ?>
     <script src="js/burger.js"></script>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("6 1, 2020 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    // Output the result in an element with id="demo"
+    document.querySelector("#countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+        
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.querySelector("#countdown").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+</script>
 </body>
 
 </html>

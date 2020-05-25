@@ -92,7 +92,7 @@ function modalConfirm(r) {
     post('./include/delet_user.inc.php', "uid=" + Uid + "&admin=" + r, function () {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);
-            db();
+            db(admin);
         }
     });
 }

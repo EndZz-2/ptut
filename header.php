@@ -13,7 +13,8 @@
     <nav class="admin-nav">
         <ul>
             <li><a class="link" href="#">CMS</a></li>
-            <li><a class="link" href="#">Projet</a></li>
+            <li><a class="link" href="">en attente</a></li>
+            <li><a class="link" href="projet.php">ptut</a></li>
             <li><a class="link" href="client-manager.php">Gérer Client</a></li>
             <li><a class="link" href="admin-manager.php">Gérer Admin</a></li>
         </ul>
@@ -23,8 +24,8 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="profil.php">Profile</a>
-                <a href="include/logout.inc.php">Déconnection</a>
+                <a href="profil.php">Profil</a>
+                <a href="include/logout.inc.php">Deconnexion</a>
             </div>
         </div>
     </nav>
@@ -74,12 +75,16 @@ if(isset($_SESSION['admin'])){
             if(isset($_SESSION['admin'])){
                 if($_SESSION['admin'] == 1){                   
             ?>
-            <div class="admin-arrow"><i class="fas fa-user"></i></div>
+            <div class="admin-arrow">
+                <i class="fas fa-user"></i>
+            </div>
             <ul id="admin" class="admin">
                 <li><a class="link" href="#">CMS</a></li>
                 <li><a class="link" href="#">Projet</a></li>
                 <li><a class="link" href="client-manager.php">Gérer Client</a></li>
                 <li><a class="link" href="admin-manager.php">Gérer Admin</a></li>
+                <li><a class="link" href="include/logout.inc.php">Deconnexion</a></li>
+                <li><a class="link" href="profil.php">Profil</a></li>                
             </ul>
             <?php
                 } 

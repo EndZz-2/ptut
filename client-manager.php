@@ -9,8 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Codd(in) | Client-manager</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link href="css/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="css/fontawesome/css/solid.css" rel="stylesheet">
