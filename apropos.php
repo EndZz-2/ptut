@@ -74,7 +74,7 @@
                     <div class="content">
                         <div class="titre">Lorenzo Tringali</div>
                         <div class="sous-titre">Développeur-web</div>
-                        <blockquote cite="Izuku midoriya" class="quote">
+                        <blockquote cite="Izuku Midoriya" class="quote">
                             Les rêves peuvent devenir réalité. <br><br>
                         </blockquote>
                     </div>
@@ -84,7 +84,7 @@
                 <div class="card Lysandre f-r">
                     <div class="img"></div>
                     <div class="content">
-                        <div class="titre">Manon Delzer</div>
+                        <div class="titre">Manon Delzers</div>
                         <div class="sous-titre">Graphiste</div>
                         <blockquote cite="She-Ra" class="quote">
                             Par l'honneur du crâne ancestral ! <br><br>
@@ -108,7 +108,7 @@
                 <div class="card Mathias f-r">
                     <div class="img"></div>
                     <div class="content">
-                        <div class="titre">Mathias</div>
+                        <div class="titre">Matthias Schmid</div>
                         <div class="sous-titre">Réalisateur</div>
                         <blockquote cite="Hayao Miyazaki" class="quote">
                             C'est très ennuyeux de ne rien faire. <br>

@@ -1,6 +1,10 @@
 <?php
     require 'include/function.inc.php';
     session_start();
+    if(!isset($_SESSION['admin']) == 1){
+        header('location: ./');
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>
