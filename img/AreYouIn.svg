@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="719" height="505" viewBox="0 0 719 505"><defs><style>.a{fill:#fff;font-size:155px;}.a,.b,.c{font-family:Kollektif-Bold, Kollektif;font-weight:700;}.b{fill:none;stroke:#fff;stroke-width:3px;font-size:153px;}.c{fill:#ff1d4e;font-size:505px;}</style></defs><g transform="translate(-242 -309)"><text class="a" transform="translate(402 578)"><tspan x="-157.092" y="0">ARE</tspan></text><text class="b" transform="translate(402 718)"><tspan x="-156.213" y="0">YOU</tspan></text><text class="c" transform="translate(760 718)"><tspan x="-200.485" y="0">in</tspan></text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="719" height="505" viewBox="0 0 719 505">
+    <defs>
+        <style>
+            @font-face {
+                font-family: "Kollektif-Bold";
+                src: url("../font/Kollektif-bold.ttf");
+            }
+
+            .a {
+                fill: #fff;
+                font-size: 155px;
+            }
+
+            .a,
+            .b,
+            .c {
+                font-family: Kollektif-Bold, Kollektif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 700;
+            }
+
+
+            .b {
+                fill: none;
+                stroke: #fff;
+                stroke-width: 3px;
+                font-size: 153px;
+            }
+
+            .c {
+                fill: #ff1d4e;
+                font-size: 505px;
+            }
+        </style>
+    </defs>
+    <g transform="translate(-242 -309)"><text class="a" transform="translate(402 578)">
+            <tspan x="-157.092" y="0">ARE</tspan>
+        </text><text class="b" transform="translate(402 718)">
+            <tspan x="-156.213" y="0">YOU</tspan>
+        </text><text class="c" transform="translate(760 718)">
+            <tspan x="-200.485" y="0">in</tspan>
+        </text></g>
+</svg>

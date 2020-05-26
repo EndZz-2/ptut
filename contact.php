@@ -1,4 +1,4 @@
-<?php require 'include/function.inc.php';
+<?php
 session_start();
 ?>
 <!DOCTYPE html>

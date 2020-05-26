@@ -1,5 +1,4 @@
 <?php
-    require 'include/function.inc.php';
     session_start();
 ?>
 

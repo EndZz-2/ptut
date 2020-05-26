@@ -4,6 +4,7 @@
 </head>
 
 <?php
+ require 'include/function.inc.php';
     if(isset($_SESSION['admin'])){
         if($_SESSION['admin'] == 1){
             console_log("admin");
@@ -13,7 +14,7 @@
     <nav class="admin-nav">
         <div class="nav-bg"></div>
         <ul>
-            <li><a class="link" href="#">CMS</a></li>
+            <li><a class="link" href="cms/cms.php">CMS</a></li>
             <li><a class="link" href="">en attente</a></li>
             <li><a class="link" href="projet.php">ptut</a></li>
             <li><a class="link" href="client-manager.php">Gérer Client</a></li>
