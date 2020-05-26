@@ -2,7 +2,10 @@
     require 'include/function.inc.php';
     require 'include/dbcon.inc.php';
     session_start();
-    
+    if(!isset($_SESSION['admin'])){
+        header('location: ./');
+        exit();
+    }
 
     
 ?>
