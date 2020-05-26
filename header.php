@@ -62,6 +62,7 @@ if(isset($_SESSION['admin'])){
     </nav>
 
     <nav class="responsive-nav">
+        <div class="nav-bg"></div>
         <button class="hamburger hamburger--squeeze" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
