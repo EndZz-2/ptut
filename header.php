@@ -8,9 +8,10 @@
         if($_SESSION['admin'] == 1){
             console_log("admin");
 ?>
-<header class="nav">
+<header class="nav">    
     <p class="titre">Admin</p>
     <nav class="admin-nav">
+        <div class="nav-bg"></div>
         <ul>
             <li><a class="link" href="#">CMS</a></li>
             <li><a class="link" href="">en attente</a></li>
@@ -42,11 +43,13 @@ if(isset($_SESSION['admin'])){
 ?>
     <a href="index.php"><img class="logo move" src="img/coddin.svg" alt="logo"></a>
     <nav class="default-nav move">
+    
 <?php
     }
 }else{?>
     <a href="index.php"><img class="logo"  src="img/coddin.svg" alt="logo"></a>
     <nav class="default-nav">
+    <div class="nav-bg"></div>
 <?php
 }
 ?>        
@@ -92,4 +95,5 @@ if(isset($_SESSION['admin'])){
             ?>
         </div>
     </nav>
+   
 </header>

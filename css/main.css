@@ -81,6 +81,15 @@ header {
     -webkit-user-select: none;
 }
 
+.nav-bg{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 150px;
+    background: linear-gradient(180deg, #121212 0% ,#12121233 60%,#12121200 100%);
+    z-index: 1;
+}
+
 .default-nav {
     margin-top: 30px;
 }
@@ -207,6 +216,7 @@ header {
     left: 150px;
     font-size: 20px;
     top: -15px;
+    z-index: 2;
 }
 
 .admin-nav .user {
@@ -216,6 +226,14 @@ header {
     color: #fff;
     text-decoration: none;
     z-index: 3;
+}
+
+.admin-nav .nav-bg{
+    position: fixed;
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(180deg, #121212 0% ,#12121233 60%,#12121200 100%);
+    z-index: 1;
 }
 
 .admin-nav .dropdown-content {
@@ -1598,10 +1616,76 @@ footer .mail {
     transform: translateX(-50%);
 }
 
+/*
+╔═══════════════════════════════╗ 
+            >projet
+╚═══════════════════════════════╝ 
+*/
 
+ .section.projet {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+} 
 
+.section.projet .tooltip {
+    position: relative;
+    display: inline-block;
+}
 
+.section.projet .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #ff1d4e;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 93%;
+    left: 60%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
 
+.section.projet .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #ff1d4e transparent  transparent  transparent;
+}
+
+.section.projet .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.section.projet .file {
+    color: #000;
+    background-color: #fff;
+    padding: 2em;
+
+}
+
+.section.projet .file h1{
+   margin-top: 0;
+}
+
+.section.projet .file i {
+    color: #000;
+    margin: 1rem 1rem 0em 0em;
+}
+
+.section.projet .file a:first-child {
+    margin-left: 0;
+}
 /*
 ╔═══════════════════════════════╗ 
             >input
