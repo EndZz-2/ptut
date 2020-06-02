@@ -1,7 +1,7 @@
 <head>
-    <link href="css/fontawesome/css/fontawesome.css" rel="stylesheet">
-    <link href="css/fontawesome/css/brands.css" rel="stylesheet">
-    <link href="css/fontawesome/css/solid.css" rel="stylesheet">
+    <link href="/css/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/css/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/css/fontawesome/css/solid.css" rel="stylesheet">
 </head>
 <footer>
     <div class="row">

@@ -13,14 +13,16 @@ if(!isset($_SESSION['admin']) == 1){
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Codd(in) | Contact</title>
+	<title>Codd(in) | projet</title>
 	<link rel="icon" href="img/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
 </head>
 
 <body>
-	<?php require 'header.php';?>
+	<?php
+		require 'header.php';
+	?>
 	<div class="section projet">
 		<div class="row">
 			<div class="col col-4 file">
@@ -85,7 +87,6 @@ if(!isset($_SESSION['admin']) == 1){
 						target="_blank"><i class="fas fa-file-pdf fa-7x"></i></a>
 					<span class="tooltiptext">Semaine_21</span>
 				</div>
-
 			</div>
 		</div>
 		<div class="row">
@@ -124,7 +125,7 @@ if(!isset($_SESSION['admin']) == 1){
 					<a href="coddin/CODD_IN_Cahier_des_charges.pdf" type="application/pdf" target="_blank">
 						<i class="fas fa-file-pdf fa-7x"></i>
 					</a>
-					<span class="tooltiptext">Cahier des Chages</span>
+					<span class="tooltiptext">Cahier des Charges</span>
 				</div>
 				<div class="tooltip">
 					<a href="coddin/CODD_IN_Event_Dev_Durable.pdf" type="application/pdf" target="_blank">
@@ -183,7 +184,7 @@ if(!isset($_SESSION['admin']) == 1){
 						target="_blank">
 						<i class="fas fa-file-pdf fa-7x"></i>
 					</a>
-					<span class="tooltiptext">Rédacion Site</span>
+					<span class="tooltiptext">Rédaction Site</span>
 				</div>
 			</div>
 		</div>

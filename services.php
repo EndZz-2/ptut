@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codd(in) | Services</title>
+    <title id="servicestitle">Codd(in) | Services</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
@@ -18,12 +18,12 @@
     <?php require 'header.php';?>
     <div class="section services">
         <div class="row">
-            <h1><span class="titre-dot">.</span>Codd in</h1>
+            <h1 id="services1"><span class="titre-dot">.</span>Codd in</h1>
             <div class="col col-2">
                 <div class="developer"></div>
             </div>
             <div class="col col-2">
-                <p class="text">
+                <p id="services2" class="text">
                     Codd in est une agence de développement web. Elle est articulée autour de 3 pôles complémentaires :
                     un
                     Pôle Design, un Pôle Développement et un Pôle Rédaction.<br><br>
@@ -36,12 +36,12 @@
         </div>
     </div>
     <div class="section etape">
-        <h1><span class="titre-dot">.</span>Les étapes de création</h1>
+        <h1 id="services3"><span class="titre-dot">.</span>Les étapes de création</h1>
         <div class="row rencontre">
             <div class="col col-2">
                 <div class="text">
-                    <h2><span class="titre-dot">.</span>La rencontre</h2>
-                    <p>
+                    <h2 id="services4"><span class="titre-dot">.</span>La rencontre</h2>
+                    <p id="services5">
                         En premier lieu, nous fixons avec vous une date de rendez-vous qui vous convienne. Le but,
                         échanger
                         et réfléchir avec vous sur ce dont vous avez besoin, qui vous êtes, qui nous sommes, et pourquoi
@@ -62,8 +62,8 @@
             </div>
             <div class="col col-2">
                 <div class="text">
-                    <h2><span class="titre-dot text-blue">.</span>La conception</h2>
-                    <p>
+                    <h2 id="services6"><span class="titre-dot text-blue">.</span>La conception</h2>
+                    <p id="services7">
                         Suite au rendez-vous, notre équipe se réunit et discute de la marche à suivre. Chacun est
                         assigné à un rôle qu’il devra assurer tout au long de votre projet. Vos demandes sont mises à la
                         connaissance de l’équipe au complet et l’organisation se met en place.<br><br>
@@ -76,8 +76,8 @@
         <div class="row realisation">
             <div class="col col-2">
                 <div class="text">
-                    <h2><span class="titre-dot text-jaune">.</span>La réalisation</h2>
-                    <p>
+                    <h2 id="services8"><span class="titre-dot text-jaune">.</span>La réalisation</h2>
+                    <p id="services9">
                         C’est l’étape culminante du projet. La réalisation constitue le pont entre votre idée et la
                         réalité de celle-ci. <br><br>
                         Toute notre équipe s’active à la réalisation de votre projet et nous faisons tout ce qui est en
@@ -92,6 +92,10 @@
         </div>
     </div>
     <?php require 'footer.php';?>
+    <script>
+        var page = "services";
+    </script>
+    <script src="js/loadcms.js"></script>
 	<script src="js/burger.js"></script>
 </body>
 

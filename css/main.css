@@ -231,7 +231,7 @@ header {
 .admin-nav .nav-bg{
     position: fixed;
     width: 100vw;
-    height: 200px;
+    height: 135px;
     background: linear-gradient(180deg, #121212 0% ,#12121233 60%,#12121200 100%);
     z-index: 1;
 }
@@ -635,7 +635,7 @@ footer .mail {
 
 .video-container{
     width: 100%;
-}
+} 
 
 .video {
     position: relative;
@@ -645,8 +645,7 @@ footer .mail {
     outline: none;
 
     background-color: rgba(0, 0, 0, 0.90);
-    height: 340px;
-    width: 604.44px;
+    max-height: 340px;
 }
 
 #countdown{    
@@ -738,10 +737,6 @@ footer .mail {
     .video-container {
         width: 100%;
         margin-left: 2%;
-    }
-
-    .video {
-        width: 96%;
     }
 
     .accueil .text {
@@ -1686,6 +1681,76 @@ footer .mail {
 .section.projet .file a:first-child {
     margin-left: 0;
 }
+
+/*
+╔═══════════════════════════════╗ 
+            >cms input 
+╚═══════════════════════════════╝ 
+*/
+.section.pole.cms {
+    margin-bottom: 0%;
+}
+
+.section.pole.cms .ligne {
+    display: none;
+}
+
+.section.pole.cms .card {
+    margin-top: 50px;
+    position: relative;
+    width: 600px;
+}
+
+.section.pole.cms .card.design {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section.pole.cms .card.web {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section.pole.cms .card.redaction {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section.pole.cms .card .content {
+    padding-bottom: 50px;
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: -1;
+    transition: .5s cubic-bezier(.40, 0, 0, 1);
+    text-align: center;
+}
+
+.section.pole.cms .service {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+    margin-top: 50px;
+    margin-bottom: 5%;
+}
+
+.section.pole.cms .card:hover .rond {
+    transform: scale(1);
+}
+
+.section.pole.cms .card:hover~.service {
+    margin-top: 50px;
+}
+
+.section .cms-title textarea{
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.apropos2 textarea{
+    width: 100%;
+}
 /*
 ╔═══════════════════════════════╗ 
             >input
@@ -1696,7 +1761,6 @@ footer .mail {
     position: relative;
     float: left;
 }
-
 
 
 input[type="text"],
@@ -1727,7 +1791,8 @@ textarea {
     line-height: normal;
     overflow-y: hidden;
     resize: none;
-    max-height: 15rem;
+    height: 3em;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .form-contact input[type="text"] {

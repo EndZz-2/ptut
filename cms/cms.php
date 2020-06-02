@@ -13,9 +13,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codd(in) | Accueil</title>
-    <link rel="icon" href="../img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/grid.css">
 </head>
 
 <body>
@@ -27,6 +27,8 @@
             <div class="row">
                 <h1><span class="titre-dot">.</span>Pages</h1>
                 <a href="accueil.php">Accueil</a>
+                <a href="services.php">Services</a>
+                <a href="apropos.php">A propos</a>
             </div>
         </div>
     </div>

@@ -35,7 +35,7 @@ if(!empty($_POST)){
 
         $token = sha1(uniqid($Uname, true));
 
-        $url = "http://coddin.mmitoulon.com/login.php/login.php?t=".$token."&u=".$Uname;
+        $url = "http://coddin.mmitoulon.com/login.php?t=".$token."&u=".$Uname;
 
         $q = $db->prepare("INSERT INTO $table (`uid`,`email`,`username`, `link`, `password`, `token`, `admin`) VALUES (NULL,:mail,:username,:link,:pass,:token,:grade);");
         $q->execute([

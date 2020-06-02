@@ -1,17 +1,3 @@
-var data = {};
-var xmlhttp = new XMLHttpRequest();
-urlrep = 'include/infos.inc.php'
-xmlhttp.open("POST", urlrep, true);
-xmlhttp.onload = function () {
-    data = JSON.parse(this.responseText);
-    console.log(data);
-    for (let i = 0; i < data.length; i++) {
-        document.getElementById(data[i]["contentId"]).innerText = data[i]["content"];
-    }
-
-}
-xmlhttp.send(data);
-
 (function () {
     class Editor {
         constructor(evt, content, id) {
@@ -25,7 +11,7 @@ xmlhttp.send(data);
 
     window.addEventListener("onTextEdited", (e) => {
         let http = new XMLHttpRequest(),
-            url = 'include/insertion.php',
+            url = '../include/cms-insertion.inc.php',
             params = 'text=' + e.detail.text + '&id=' + e.detail.id;
 
         http.open('POST', url, true);
@@ -33,17 +19,15 @@ xmlhttp.send(data);
         http.send(params);
     });
 
-    let content = document.getElementsByClassName('content'),
-
+    let content = document.getElementsByClassName('cms-content'),
         event = document.getElementsByClassName('event');
-
 
     for (let i = 0; i < content.length; i++) {
         let data = new Editor(event[i], content[i], i);
         data.event.addEventListener("dblclick", (e) => {
             if (data.edit) return;
 
-            let text = data.content.innerText;
+            let text = data.content.innerHTML;
 
             data.event.removeChild(data.content);
 
@@ -56,15 +40,19 @@ xmlhttp.send(data);
             text_area.focus();
             text_area.select()
 
-            data.event.addEventListener("blur", (e) => {
+            text_area.style.height = "20px";
+            text_area.style.height = (15 + text_area.scrollHeight) + "px";
+
+            
+            data.event.addEventListener("blur", () => {
                 if (!data.edit) return;
 
                 text = text_area.value;
                 data.event.removeChild(text_area);
 
-                data.content = document.createElement("p");
-                data.content.classList.add("content");
-                data.content.innerText = text;
+                // data.content = document.createElement("span");
+                data.content.classList.add("cms-content");
+                data.content.innerHTML = text;
                 data.event.appendChild(data.content);
 
                 data.edit = false;
@@ -81,3 +69,4 @@ xmlhttp.send(data);
         }, true);
     }
 })();
+

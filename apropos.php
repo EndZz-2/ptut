@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codd(in) | Réalisations web</title>
+    <title id="apropostitle">Codd(in) | Réalisations web</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
@@ -20,7 +20,9 @@
         <img src="img/coddin.svg" alt="logo">
         <div class="row">
             <div class="text">
-                <h1><span class="titre-dot">.</span>Qui sommes-nous ?</h1>
+                <h1>
+                    <span class="titre-dot">.</span>Qui sommes-nous ?
+                </h1>
                 <p>
                     Codd in, c’est la synergie de 7 membres jeunes, soudés et aux compétences polyvalentes et
                     complémentaires. Autrefois étudiants au département MMI de l’IUT de Toulon, nous avons décidé de
