@@ -35,7 +35,7 @@ if(!empty($_POST)){
 
         $token = sha1(uniqid($Uname, true));
 
-        $url = "http://coddin.mmitoulon.com/login.php?t=".$token."&u=".$Uname;
+        $url = "coddin.mmitoulon.com/login.php?t=".$token."&u=".$Uname;
 
         $q = $db->prepare("INSERT INTO $table (`uid`,`email`,`username`, `link`, `password`, `token`, `admin`) VALUES (NULL,:mail,:username,:link,:pass,:token,:grade);");
         $q->execute([
@@ -46,19 +46,43 @@ if(!empty($_POST)){
             'token' => $token,
             'grade' => $admin
         ]);
+
         if(!empty($q)){
             echo 'successs';
             
-            // $message = <<<ENDMSG
-            // Merci d'utilisé codd in. S'il vous plait allez sur le lien suivant :
-            // $url 
-            // Pour activer votre compte.
-            // ENDMSG;
-            // mail($mail, "Activée votre compte", $message);
+            $message = '
+            <html>
 
+            <head>
+                <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+                <title>Création d\'un nouveau compte agence coddin</title>
+                <link rel="import" href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap">
+            </head>
+           
+            <body style=" margin: 0; padding: 0; background-color: #121212; font-family: \'Merriweather Sans\', sans-serif; color: #fff; text-align: center;">
+                <h1 style="padding-top: 100px; font-size: 2.5em;"><span style="color: #ff1d4e; font-weight: 700; font-size: 50px;">.</span>Nouveau compte</h1>
+                <p>Merci d\'utilisé codd in.
+                    <br>Afin de finalisé la création de votre compte merci de vous rendre sur le lien
+                    suivant :</p>
+                <a style="color: #00FFCE; text-decoration: underline;" href="'.$url.'" target="_blank">Lien de création</a>
+                <br><br><br><br><br>
+            </body>
+           
+            </html>
+            ';
+
+            $headers[] = 'MIME-Version: 1.0';
+            $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+            $headers[] = 'From: coddin@website.com';
+
+            $subject = "Activée votre compte";
+
+            if(mail($mail, $subject, $message, implode("\r\n", $headers))){
+                echo('send');
+            }else{
+                echo('erreur');
+            }
 
         }else echo 'error=insertion';
-    
-
     }
 }

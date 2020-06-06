@@ -21,7 +21,7 @@
         <div class="row">
             <div class="text">
                 <h1>
-                    <span class="titre-dot">.</span>Qui sommes-nous ?
+                   Qui sommes-nous ?
                 </h1>
                 <p>
                     Codd in, c’est la synergie de 7 membres jeunes, soudés et aux compétences polyvalentes et
@@ -39,7 +39,7 @@
         </div>
         <div class="row">
             <div class="text center">
-                <h1><span class="titre-dot">.</span>Equipe</h1>
+                <h1>Equipe</h1>
             </div>
         </div>
         <div class="row">
@@ -134,7 +134,7 @@
     <div class="section apropos-contact">
         <div class="row">
             <form action="include/mail.inc.php" method="post" class="form-contact">
-                <h1><span class="titre-dot">.</span>contactez-nous</h1>
+                <h1>contactez-nous</h1>
                 <div class="input-container">
                     <div class="group"><input name="nom" type="text" autocomplete="off" required><label
                             for="nom">Nom</label></div>

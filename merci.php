@@ -18,7 +18,7 @@
 
 	<div class="section merci">
 		<div class="row">
-			<h1><span class="titre-dot">.</span>Merci de nous avoir contacté</h1>
+			<h1>Merci de nous avoir contacté</h1>
 		</div>
 	</div>
 	

@@ -7,11 +7,12 @@ function post(url, v, f) {
 }
 
 post("../include/cmsload.inc.php", "page=" + page, function (){
+    console.log(JSON.parse(this.responseText))
     data = JSON.parse(this.responseText);
     for (let i = 0; i < data.length; i++) {      
         document.getElementById(data[i]["id"]).innerHTML= data[i]["content"];
     }
-},false)
+})
 
 // var data = {};
 // http.send(data);

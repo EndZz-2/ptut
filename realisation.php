@@ -17,7 +17,7 @@
 <body>
     <?php require 'header.php';?>
     <div class="section realisation">
-        <h1><span class="titre-dot">.</span>Réalisations</h1>
+        <h1>Réalisations</h1>
         <div class="row">
             <a href="https://livedemo00.template-help.com/wt_52524/" target="_blank">
                 <div class="consultbiz"></div>

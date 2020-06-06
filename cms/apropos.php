@@ -22,7 +22,7 @@
             <div class="text">
                 <h1 class="event">
                     <span id="apropos1" class="cms-content">
-                        <span class="titre-dot">.</span>Qui sommes-nous ?
+                        Qui sommes-nous ?
                     </span>
                 </h1>
                 <p class="event apropos2">
@@ -47,7 +47,7 @@
             <div class="text center">
                 <h1 class="event">
                     <span id="apropos3" class="cms-content">
-                        <span class="titre-dot">.</span>Equipe
+                        Equipe
                     </span>
                 </h1>
             </div>

@@ -32,13 +32,10 @@
             <div class="row">
                 <div class="col col-2">
                     <div class="video-container">
-                        <div class="video">
-                            <div id="countdown"></div>
-                        </div>
-                        <!-- <video class="video" height="340" controls>
-                            <source src="vod/coddin.mp4" type="video/mp4">
+                        <video class="video" height="340" poster="/img/video_poster.png" controls>
+                            <source src="/vod/coddin_final.mp4" type="video/mp4">
                             Your browser does not support HTML5 video.
-                        </video> -->
+                        </video>
                     </div>
                 </div>
                 <div class="col col-2">
@@ -96,9 +93,9 @@
                         </span>
                     </h1>
                     <div class="conception-text">
-                        <h2>1 Projet | 3 Pôles</h2>
+                        <h2 class="no-dot">1 Projet | 3 Pôles</h2>
                         <img style="height: 140px;" src="/img/YouArein.svg" alt="You Are In">
-                        <h2>Nos trois pôles</h2>
+                        <h2 class="no-dot">Nos trois pôles</h2>
                     </div>
                 </div>
                 <div class="col col-4" style="margin: 0;">

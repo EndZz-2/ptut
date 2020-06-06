@@ -18,7 +18,7 @@ session_start();
 			<section class="section contact">
 				<div class="row">
 					<form action="include/mail.inc.php" method="POST" class="form-contact">
-						<h1><span class="titre-dot">.</span>contactez-nous</h1>						
+						<h1>contactez-nous</h1>						
 							<div class="group"><input name="nom" type="text" autocomplete="off" required><label
 									for="nom">Nom</label></div>
 							<div class="group"><input id="mail" name="email" type="text" autocomplete="off"

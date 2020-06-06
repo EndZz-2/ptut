@@ -20,7 +20,7 @@
         <div class="row">
             <h1 class="event cms-title">
                 <span id="services1" class="cms-content">
-                    <span class="titre-dot">.</span>Codd in</h1>
+                   Codd in</h1>
             </span>
             <div class="col col-2">
                 <div class="developer"></div>
@@ -45,7 +45,7 @@
     <div class="section etape">
         <h1 class="event cms-title">
             <span id="services3" class="cms-content">
-                <span class="titre-dot">.</span>Les étapes de création
+                Les étapes de création
             </span>
         </h1>
         <div class="row rencontre">
@@ -53,7 +53,7 @@
                 <div class="text">
                     <h2 class="event">
                         <span id="services4" class="cms-content">
-                            <span class="titre-dot">.</span>La rencontre
+                            La rencontre
                         </span>
                     </h2>
                     <p class="event">
@@ -81,9 +81,9 @@
             </div>
             <div class="col col-2">
                 <div class="text">
-                    <h2 class="event">
+                    <h2 class="event bleu">
                         <span id="services6" class="cms-content">
-                            <span class="titre-dot text-blue">.</span>La conception
+                            La conception
                         </span>
                     </h2>
                     <p class="event">
@@ -102,9 +102,9 @@
         <div class="row realisation">
             <div class="col col-2">
                 <div class="text">
-                    <h2 class="event">
+                    <h2 class="event jaune">
                         <span id="services8" class="cms-content">
-                            <span class="titre-dot text-jaune">.</span>La réalisation
+                            La réalisation
                         </span>
                     </h2>
                     <p class="event">

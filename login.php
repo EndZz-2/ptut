@@ -36,7 +36,7 @@
     ?>
             <form class="fmdp" action="include/login.inc.php" method="POST">
                 <input type="hidden" name="uid" value="<?= $data['uid']?>">
-                <h1><span class="titre-dot">.</span>Votre mot de passe</h1>
+                <h1>Votre mot de passe</h1>
                 <input type="text" name="pass" value="<?= $data['password']?>" autocomplete="off" required>
                 <p>
                     Cliquer pour le modifier.<br><br>
@@ -49,12 +49,12 @@
             }else{
     ?>
             <form class="flogin" action="include/login.inc.php" method="POST">
-                <h1><span class="titre-dot">.</span>Connexion</h1>
+                <h1>Connexion</h1>
                 <div class="group">
                     <input name="user" type="text" autocomplete="off" required>
                     <label for="user">Nom d'Utilisateur</label>
                 </div>
-                <div class="group">.
+                <div class="group">
                     <input name="pass" type="password" autocomplete="off" required>
                     <label for="pass">Mot de passe</label>
                 </div>
@@ -67,7 +67,7 @@
         else{
     ?>
             <form class="flogin" action="include/login.inc.php" method="POST">
-                <h1><span class="titre-dot">.</span>Connexion</h1>
+                <h1>Connexion</h1>
                 <div class="group">
                     <input name="user" type="text" autocomplete="off" required>
                     <label for="user">Nom d'Utilisateur</label>

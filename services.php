@@ -18,7 +18,7 @@
     <?php require 'header.php';?>
     <div class="section services">
         <div class="row">
-            <h1 id="services1"><span class="titre-dot">.</span>Codd in</h1>
+            <h1 id="services1">Codd in</h1>
             <div class="col col-2">
                 <div class="developer"></div>
             </div>
@@ -36,11 +36,11 @@
         </div>
     </div>
     <div class="section etape">
-        <h1 id="services3"><span class="titre-dot">.</span>Les étapes de création</h1>
+        <h1 id="services3">Les étapes de création</h1>
         <div class="row rencontre">
             <div class="col col-2">
                 <div class="text">
-                    <h2 id="services4"><span class="titre-dot">.</span>La rencontre</h2>
+                    <h2 id="services4">La rencontre</h2>
                     <p id="services5">
                         En premier lieu, nous fixons avec vous une date de rendez-vous qui vous convienne. Le but,
                         échanger
@@ -62,7 +62,7 @@
             </div>
             <div class="col col-2">
                 <div class="text">
-                    <h2 id="services6"><span class="titre-dot text-blue">.</span>La conception</h2>
+                    <h2 id="services6" class="bleu">La conception</h2>
                     <p id="services7">
                         Suite au rendez-vous, notre équipe se réunit et discute de la marche à suivre. Chacun est
                         assigné à un rôle qu’il devra assurer tout au long de votre projet. Vos demandes sont mises à la
@@ -76,7 +76,7 @@
         <div class="row realisation">
             <div class="col col-2">
                 <div class="text">
-                    <h2 id="services8"><span class="titre-dot text-jaune">.</span>La réalisation</h2>
+                    <h2 id="services8" class="jaune">La réalisation</h2>
                     <p id="services9">
                         C’est l’étape culminante du projet. La réalisation constitue le pont entre votre idée et la
                         réalité de celle-ci. <br><br>

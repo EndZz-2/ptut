@@ -25,7 +25,7 @@
     <div class="web-content">
         <div class="section">
             <div class="row">
-                <h1><span class="titre-dot">.</span>Pages</h1>
+                <h1>Pages</h1>
                 <a href="accueil.php">Accueil</a>
                 <a href="services.php">Services</a>
                 <a href="apropos.php">A propos</a>

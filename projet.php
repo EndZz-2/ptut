@@ -26,7 +26,7 @@ if(!isset($_SESSION['admin']) == 1){
 	<div class="section projet">
 		<div class="row">
 			<div class="col col-4 file">
-				<h1><span class="titre-dot">.</span>Journaux Hebdomadaires</h1>
+				<h1>Journaux Hebdomadaires</h1>
 				<div class="tooltip">
 					<a href="coddin/journaux hebdo/CODD IN JOURNAL HEBDO SEMAINE 10.pdf" type="application/pdf"
 						target="_blank"><i class="fas fa-file-pdf fa-7x"></i></a>
@@ -91,7 +91,7 @@ if(!isset($_SESSION['admin']) == 1){
 		</div>
 		<div class="row">
 			<div class="col col-4 file">
-				<h1><span class="titre-dot">.</span>Compte rendu de réunions</h1>
+				<h1>Compte rendu de réunions</h1>
 				<div class="tooltip">
 					<a href="coddin/Compte_rendu_reunion_Coddin_23_03.pdf" type="application/pdf" target="_blank"><i
 							class="fas fa-file-pdf fa-7x"></i></a>
@@ -101,7 +101,7 @@ if(!isset($_SESSION['admin']) == 1){
 		</div>
 		<div class="row">
 			<div class="col col-4 file">
-				<h1><span class="titre-dot">.</span>Livrables</h1>
+				<h1>Livrables</h1>
 				<div class="tooltip">
 					<a href="coddin/Codd_in_CHARTE_GRAPHIQUE.pdf" type="application/pdf" target="_blank">
 						<i class="fas fa-file-pdf fa-7x"></i>

@@ -52,18 +52,33 @@ body {
     cursor: pointer;
 }
 
-.titre-dot {
+h1::before,
+h2:not(.no-dot)::before{
+    content: ".";
     font-family: 'Kollektif', sans-serif;
     color: #ff1d4e;
     font-weight: 700;
     font-size: 50px;
 }
 
-.text-blue {
+h2.jaune::before{
+    color: #FFDA00;
+}
+
+h2.bleu::before{
     color: #00FFCE;
 }
 
-.text-jaune {
+b {
+    font-weight: 500;
+    color: #00FFCE;
+}
+
+b.red {
+    color: #ff1d4e;
+}   
+
+b.jaune {
     color: #FFDA00;
 }
 
@@ -1583,7 +1598,7 @@ footer .mail {
    font-size: 3rem;
 }
 
-.section.login .flogin .titre-dot{
+.section.login .flogin h1::before{
     font-size: 5rem;
  }
 
