@@ -39,33 +39,5 @@ if(isset($_POST['login'])){
         }
     }
 }
-if(isset($_POST['pass_change'])){
-
-    if(empty($_POST['uid']) || empty($_POST['pass'])){
-        //champ vide
-        header("Location: ../login.php");
-        exit();
-    }
-
-    $uid = $_POST['uid'];
-    $pass = $_POST['pass'];
-
-    $options = [
-        'cost' => 12,
-    ];
-
-    $hashpass = password_hash($pass,PASSWORD_BCRYPT,$options);
-
-    $q = $db->prepare("UPDATE $table SET `password`=:pass, `token`='' WHERE `uid`=:id");
-    $q->execute([
-        'id' => $uid,
-        'pass' => $hashpass
-    ]);
-
-    if(!empty($q)){
-        header("Location: ../login.php");
-        exit();
-    }else echo "marche pas";
-}
 ?>
 

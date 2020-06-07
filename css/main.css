@@ -438,7 +438,8 @@ header {
 }
 
 #menu .admin-arrow i{
-    transform: scale(6);}
+    transform: scale(6);
+}
 
 #menu .admin-arrow::after{
     content: "Navigation Utilisateur";
@@ -1766,6 +1767,188 @@ footer .mail {
 .apropos2 textarea{
     width: 100%;
 }
+
+
+/*
+╔═══════════════════════════════╗ 
+            >cms 
+╚═══════════════════════════════╝ 
+*/
+
+.section.cms-accueil{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.section.cms-accueil a{
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    margin: 4% 0;
+}
+
+
+.section.cms-accueil a:first-of-type{
+    margin-top: 50px;
+}
+
+.section.cms-accueil a:hover{
+    text-decoration: underline;
+}
+
+/*
+╔═══════════════════════════════╗ 
+            >plan
+╚═══════════════════════════════╝ 
+*/
+
+.section.plan{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.section.plan a{
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    margin: 4% 0;
+}
+
+
+.section.plan a:first-of-type{
+    margin-top: 50px;
+}
+
+.section.plan a:hover{
+    text-decoration: underline;
+}
+
+/*
+╔═══════════════════════════════╗ 
+            >profile
+╚═══════════════════════════════╝ 
+*/
+
+#profile {
+    overflow: hidden;
+}
+
+.section.profile{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+}
+
+.section.profile .button{
+    display: block;
+    width: 300px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.section.profile #i-user{
+    transition: 0.5s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.profile #i-user.active{
+    transform: translateY(-130%);
+}
+
+.section.profile .button{ 
+    opacity: 1;
+    transition: 0.5s cubic-bezier(.40, 0, 0, 1);
+    visibility: visible;
+}
+
+.section.profile .button.hide{ 
+    opacity: 0;
+    transform: translate(-150%);
+    transition: 0.5s cubic-bezier(.40, 0, 0, 1);
+    visibility: hidden;
+}
+
+.section.profile #form-mdp{ 
+    position: absolute;
+    top: 50%;
+    transform: translate(150%, -40%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.profile #form-mdp.active{ 
+    opacity: 1;
+    transform: translate(0%, -30%);    
+    visibility: visible;
+    display: block;
+}
+
+
+.section.profile .f-profile p,
+.section.profile .f-profile h1{
+    position: relative;
+}
+
+.section.profile input[type="text"] {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 1.2em;
+}
+
+.section.profile input[type="password"] {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 1.2em;    
+}
+
+.section.profile .group .infos {
+    position: absolute;  
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.section.profile .group .infos .--error {
+    position: absolute;  
+    top: -49px;
+    right: 0px;
+    color: #ff1d4e;
+    z-index: -1;
+}
+
+.section.profile .group .infos .--success {
+    position: absolute;  
+    top: -49px;
+    right: 0px;
+    color: #1dff56;
+    z-index: -1;
+}
+
+.section.profile .group .infos p {
+    position: relative;  
+    text-align: left;
+    top: -13px;
+    left: 5px;
+    color: #ff1d4e;
+    z-index: -1;
+}
+
+.section.profile .group .infos.--active {
+    position: relative;  
+    opacity: 1;
+    visibility: visible;
+}
+
 /*
 ╔═══════════════════════════════╗ 
             >input
