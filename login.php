@@ -58,7 +58,7 @@
                     <input name="pass" type="password" autocomplete="off" required>
                     <label for="pass">Mot de passe</label>
                 </div>
-                <a class="forgot" href="">Mot de passe oublié ?</a>
+                <a class="forgot" href="mdpforget.php">Mot de passe oublié ?</a>
                 <input name="login" class="btn" type="submit" value="SEND">
             </form>
             <?php
@@ -76,7 +76,7 @@
                     <input name="pass" type="password" autocomplete="off" required>
                     <label for="pass">Mot de passe</label>
                 </div>
-                <a class="forgot" href="">Mot de passe oublié ?</a>
+                <a class="forgot" href="mdpforget.php">Mot de passe oublié ?</a>
                 <input name="login" class="btn" type="submit" value="SEND">
             </form>
             <?php

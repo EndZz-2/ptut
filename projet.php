@@ -87,6 +87,16 @@ if(!isset($_SESSION['admin']) == 1){
 						target="_blank"><i class="fas fa-file-pdf fa-7x"></i></a>
 					<span class="tooltiptext">Semaine_21</span>
 				</div>
+				<div class="tooltip">
+					<a href="coddin/journaux hebdo/CODD IN JOURNAL HEBDO SEMAINE 22.pdf" type="application/pdf"
+						target="_blank"><i class="fas fa-file-pdf fa-7x"></i></a>
+					<span class="tooltiptext">Semaine_22</span>
+				</div>
+				<div class="tooltip">
+					<a href="coddin/journaux hebdo/CODD IN JOURNAL HEBDO SEMAINE 23.pdf" type="application/pdf"
+						target="_blank"><i class="fas fa-file-pdf fa-7x"></i></a>
+					<span class="tooltiptext">Semaine_23</span>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -185,6 +195,13 @@ if(!isset($_SESSION['admin']) == 1){
 						<i class="fas fa-file-pdf fa-7x"></i>
 					</a>
 					<span class="tooltiptext">Rédaction Site</span>
+				</div>
+				<div class="tooltip">
+					<a href="coddin/cahier_de_conception_codd_in.pdf" type="application/pdf"
+						target="_blank">
+						<i class="fas fa-file-pdf fa-7x"></i>
+					</a>
+					<span class="tooltiptext">Cahier de Conception</span>
 				</div>
 			</div>
 		</div>

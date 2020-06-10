@@ -28,7 +28,7 @@
             <div class="modal-icon">
                 <i id="icon" class="fas fa-exclamation-circle"></i>
             </div>
-            <h1><span class="titre-dot">.</span>Supprimer</h1>
+            <h1>Supprimer</h1>
             <p>Vous êtes sur le point de supprimé un compte</p>
             <p>êtes-vous sur de vouloir le suprimer ?</p>
             <div>

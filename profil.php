@@ -70,7 +70,7 @@
                         </div>
                         <div class="group">
                             <input id="npass2" name="pass" type="password" autocomplete="off" required>
-                            <label for="pass">Confimation du Mot de passe</label>
+                            <label for="pass">Confirmation du Mot de passe</label>
                             <div id="infos4" class="infos">
                                 <i class="fas"></i>
                                 <p id="usermessage3"></p>

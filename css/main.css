@@ -1911,14 +1911,14 @@ footer .mail {
     margin-bottom: 1.2em;    
 }
 
-.section.profile .group .infos {
+.section .group .infos {
     position: absolute;  
     opacity: 0;
     visibility: hidden;
     transition: 0.5s ease;
 }
 
-.section.profile .group .infos .--error {
+.section .group .infos .--error {
     position: absolute;  
     top: -49px;
     right: 0px;
@@ -1926,7 +1926,7 @@ footer .mail {
     z-index: -1;
 }
 
-.section.profile .group .infos .--success {
+.section .group .infos .--success {
     position: absolute;  
     top: -49px;
     right: 0px;
@@ -1934,7 +1934,7 @@ footer .mail {
     z-index: -1;
 }
 
-.section.profile .group .infos p {
+.section .group .infos p {
     position: relative;  
     text-align: left;
     top: -13px;
@@ -1943,10 +1943,88 @@ footer .mail {
     z-index: -1;
 }
 
-.section.profile .group .infos.--active {
+.section .group .infos.--active {
     position: relative;  
     opacity: 1;
     visibility: visible;
+}
+
+/*
+╔═══════════════════════════════╗ 
+            >forget
+╚═══════════════════════════════╝ 
+*/
+
+#forget {
+    overflow: hidden;
+}
+
+.section.forget{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+}
+
+.section.forget .button{
+    display: block;
+    width: 300px;
+    margin: 0px 0;
+    padding: 10px;
+}
+
+.section.forget .button.hide{ 
+    opacity: 0;
+    transform: translate(-150%);
+    transition: 0.5s cubic-bezier(.40, 0, 0, 1);
+    visibility: hidden;
+}
+
+.section.forget #i-user{
+    transition: 0.5s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.forget #i-user.active{
+    transform: translateY(-130%);
+}
+
+.section.forget #f-merci{ 
+    position: absolute;
+    top: 50%;
+    transform: translate(150%, -40%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s cubic-bezier(.40, 0, 0, 1);
+}
+
+.section.forget #f-merci p{ 
+    width: 300px;
+}
+
+.section.forget #f-merci.active{ 
+    opacity: 1;
+    transform: translate(0%, -30%);    
+    visibility: visible;
+    display: block;
+}
+
+
+.section.forget .f-forget p,
+.section.forget .f-forget h1{
+    position: relative;
+}
+
+.section.forget input[type="text"] {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 1.2em;
+}
+
+.section.forget input[type="password"] {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 1.2em;    
 }
 
 /*

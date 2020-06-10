@@ -15,8 +15,8 @@
         <div class="nav-bg"></div>
         <ul>
             <li><a class="link" href="/cms/cms.php">CMS</a></li>
-            <li><a class="link" href="">en attente</a></li>
-            <li><a class="link" href="/projet.php">ptut</a></li>
+            <li><a class="link" href="/enatt.php">En attente</a></li>
+            <li><a class="link" href="/projet.php">Ptut</a></li>
             <li><a class="link" href="/client-manager.php">Gérer Client</a></li>
             <li><a class="link" href="/admin-manager.php">Gérer Admin</a></li>
         </ul>
@@ -85,7 +85,8 @@ if(isset($_SESSION['admin'])){
             </div>
             <ul id="admin" class="admin">
                 <li><a class="link" href="/cms/cms.php">CMS</a></li>
-                <li><a class="link" href="/projet.php">Projet</a></li>
+                <li><a class="link" href="/enatt.php">En attente</a></li>
+                <li><a class="link" href="/projet.php">Ptut</a></li>
                 <li><a class="link" href="/client-manager.php">Gérer Client</a></li>
                 <li><a class="link" href="/admin-manager.php">Gérer Admin</a></li>
                 <li><a class="link" href="/include/logout.inc.php">Deconnexion</a></li>
